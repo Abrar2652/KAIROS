@@ -1,0 +1,27 @@
+=== Re-run failed Reddit anomaly λ=1 ===
+[run ] GPU=6 reddit_ano_fixedtau05_s99
+[done] reddit_ano_fixedtau05_s99
+=== Re-run failed Reddit no-Koopman anomaly λ=0 ===
+[run ] GPU=6 reddit_no_koop_anomaly_s42
+[done] reddit_no_koop_anomaly_s42
+[run ] GPU=6 reddit_no_koop_anomaly_s7
+[done] reddit_no_koop_anomaly_s7
+[run ] GPU=6 reddit_no_koop_anomaly_s13
+[done] reddit_no_koop_anomaly_s13
+[run ] GPU=6 reddit_no_koop_anomaly_s99
+[done] reddit_no_koop_anomaly_s99
+=== Re-run Arxiv classification s99 ===
+[run ] GPU=6 arxiv_gcn_fixedtau05_s99
+[done] arxiv_gcn_fixedtau05_s99
+=== Run Arxiv anomaly all 5 seeds ===
+[run ] GPU=6 arxiv_ano_fixedtau05_s24
+[done] arxiv_ano_fixedtau05_s24
+[run ] GPU=6 arxiv_ano_fixedtau05_s42
+[done] arxiv_ano_fixedtau05_s42
+[run ] GPU=6 arxiv_ano_fixedtau05_s7
+[done] arxiv_ano_fixedtau05_s7
+[run ] GPU=6 arxiv_ano_fixedtau05_s13
+[done] arxiv_ano_fixedtau05_s13
+[run ] GPU=6 arxiv_ano_fixedtau05_s99
+[done] arxiv_ano_fixedtau05_s99
+=== rerun_failed_queue complete ===

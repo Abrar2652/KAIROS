@@ -1,0 +1,71 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[ablate] mode=fixed_tau seed=7 dataset=bitotc task=anomaly_detection
+[KAIROS] Using device: cuda:0 (NVIDIA RTX A5000)
+Constructing structural anomaly nodes...
+Done. 150 structural nodes (2250 edges)
+
+Constructing attribute anomaly nodes...
+Done. 150 attribute anomaly nodes
+
+[KAIROS] Small graph (4863 nodes) → full-neighbour training sampler
+
+[KAIROS] Backbone: gat
+Training 50 epochs | 4 views | λ_koop=1.0 | PPR α=0.15
+
+/nas/home/jahin/.local/lib/python3.10/site-packages/dgl/dataloading/dataloader.py:1144: DGLWarning: Dataloader CPU affinity opt is not enabled, consider switching it on (see enable_cpu_affinity() or CPU best practices for DGL [https://docs.dgl.ai/tutorials/cpu/cpu_best_practises.html])
+  dgl_warning(
+Epoch 00000 | NCE 79.3744 | KOOP 0.1164 | τ 0.5000 | Total 79.4909
+Epoch 00001 | NCE 75.2778 | KOOP 0.0884 | τ 0.5000 | Total 75.3662
+Epoch 00002 | NCE 71.9532 | KOOP 0.0697 | τ 0.5000 | Total 72.0229
+Epoch 00003 | NCE 69.4209 | KOOP 0.0485 | τ 0.5000 | Total 69.4694
+Epoch 00004 | NCE 68.3893 | KOOP 0.0563 | τ 0.5000 | Total 68.4456
+Epoch 00005 | NCE 66.9797 | KOOP 0.0380 | τ 0.5000 | Total 67.0177
+Epoch 00006 | NCE 66.1593 | KOOP 0.0367 | τ 0.5000 | Total 66.1960
+Epoch 00007 | NCE 65.6594 | KOOP 0.0384 | τ 0.5000 | Total 65.6978
+Epoch 00008 | NCE 64.7717 | KOOP 0.0267 | τ 0.5000 | Total 64.7985
+Epoch 00009 | NCE 64.3945 | KOOP 0.0244 | τ 0.5000 | Total 64.4189
+Epoch 00010 | NCE 63.9141 | KOOP 0.0284 | τ 0.5000 | Total 63.9425
+Epoch 00011 | NCE 63.3593 | KOOP 0.0299 | τ 0.5000 | Total 63.3892
+Epoch 00012 | NCE 63.4457 | KOOP 0.0202 | τ 0.5000 | Total 63.4659
+Epoch 00013 | NCE 62.8834 | KOOP 0.0260 | τ 0.5000 | Total 62.9094
+Epoch 00014 | NCE 62.7098 | KOOP 0.0299 | τ 0.5000 | Total 62.7397
+Epoch 00015 | NCE 62.7304 | KOOP 0.0240 | τ 0.5000 | Total 62.7544
+Epoch 00016 | NCE 62.4705 | KOOP 0.0184 | τ 0.5000 | Total 62.4889
+Epoch 00017 | NCE 61.7280 | KOOP 0.0227 | τ 0.5000 | Total 61.7507
+Epoch 00018 | NCE 62.1706 | KOOP 0.0204 | τ 0.5000 | Total 62.1911
+Epoch 00019 | NCE 61.6621 | KOOP 0.0201 | τ 0.5000 | Total 61.6822
+Epoch 00020 | NCE 61.8126 | KOOP 0.0204 | τ 0.5000 | Total 61.8330
+Epoch 00021 | NCE 61.5798 | KOOP 0.0259 | τ 0.5000 | Total 61.6057
+Epoch 00022 | NCE 61.6279 | KOOP 0.0226 | τ 0.5000 | Total 61.6505
+Epoch 00023 | NCE 61.5766 | KOOP 0.0234 | τ 0.5000 | Total 61.5999
+Epoch 00024 | NCE 61.4514 | KOOP 0.0230 | τ 0.5000 | Total 61.4744
+Epoch 00025 | NCE 61.2693 | KOOP 0.0213 | τ 0.5000 | Total 61.2907
+Epoch 00026 | NCE 61.1333 | KOOP 0.0196 | τ 0.5000 | Total 61.1529
+Epoch 00027 | NCE 60.8745 | KOOP 0.0176 | τ 0.5000 | Total 60.8921
+Epoch 00028 | NCE 61.1603 | KOOP 0.0189 | τ 0.5000 | Total 61.1792
+Epoch 00029 | NCE 60.7658 | KOOP 0.0166 | τ 0.5000 | Total 60.7824
+Epoch 00030 | NCE 60.5260 | KOOP 0.0111 | τ 0.5000 | Total 60.5371
+Epoch 00031 | NCE 60.6181 | KOOP 0.0188 | τ 0.5000 | Total 60.6369
+Epoch 00032 | NCE 60.8227 | KOOP 0.0142 | τ 0.5000 | Total 60.8369
+Epoch 00033 | NCE 60.6994 | KOOP 0.0196 | τ 0.5000 | Total 60.7190
+Epoch 00034 | NCE 60.8290 | KOOP 0.0202 | τ 0.5000 | Total 60.8493
+Epoch 00035 | NCE 60.5526 | KOOP 0.0197 | τ 0.5000 | Total 60.5723
+Epoch 00036 | NCE 60.4082 | KOOP 0.0183 | τ 0.5000 | Total 60.4265
+Epoch 00037 | NCE 60.7265 | KOOP 0.0163 | τ 0.5000 | Total 60.7428
+Epoch 00038 | NCE 60.5289 | KOOP 0.0189 | τ 0.5000 | Total 60.5478
+Epoch 00039 | NCE 60.4480 | KOOP 0.0200 | τ 0.5000 | Total 60.4679
+Epoch 00040 | NCE 60.6354 | KOOP 0.0207 | τ 0.5000 | Total 60.6562
+Epoch 00041 | NCE 60.6111 | KOOP 0.0234 | τ 0.5000 | Total 60.6345
+Epoch 00042 | NCE 60.8785 | KOOP 0.0202 | τ 0.5000 | Total 60.8987
+Epoch 00043 | NCE 60.5328 | KOOP 0.0156 | τ 0.5000 | Total 60.5484
+Epoch 00044 | NCE 60.4614 | KOOP 0.0195 | τ 0.5000 | Total 60.4809
+Epoch 00045 | NCE 60.4693 | KOOP 0.0140 | τ 0.5000 | Total 60.4833
+Epoch 00046 | NCE 60.5306 | KOOP 0.0162 | τ 0.5000 | Total 60.5468
+Epoch 00047 | NCE 60.4628 | KOOP 0.0136 | τ 0.5000 | Total 60.4764
+Epoch 00048 | NCE 60.4591 | KOOP 0.0202 | τ 0.5000 | Total 60.4793
+Epoch 00049 | NCE 60.5248 | KOOP 0.0145 | τ 0.5000 | Total 60.5394
+
+AUC (S1+S2+S3 combined): 0.9395
+  S1 temporal: 0.9116 | S2 Koopman: 0.9193 | S3 nbr-dev: 0.7079
+[ablate-result] ablation=fixed_tau seed=7 dataset=bitotc task=anomaly_detection result={'auc': 0.9395156695156696, 'auc_s1': 0.9116239316239317, 'auc_s2': 0.9193491124260355, 'auc_s3': 0.7078522901599824}

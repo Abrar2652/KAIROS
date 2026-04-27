@@ -1,0 +1,50 @@
+=== KAIROS multi-seed: mooc classification (GCN, tau=0.5) ===
+[run ] GPU=6 mooc_gcn_fixedtau05_s24
+[done] mooc_gcn_fixedtau05_s24
+[run ] GPU=6 mooc_gcn_fixedtau05_s42
+[done] mooc_gcn_fixedtau05_s42
+[run ] GPU=6 mooc_gcn_fixedtau05_s7
+[done] mooc_gcn_fixedtau05_s7
+[run ] GPU=6 mooc_gcn_fixedtau05_s13
+[done] mooc_gcn_fixedtau05_s13
+[run ] GPU=6 mooc_gcn_fixedtau05_s99
+[done] mooc_gcn_fixedtau05_s99
+=== KAIROS multi-seed: mooc anomaly detection ===
+[run ] GPU=6 mooc_ano_fixedtau05_s24
+[done] mooc_ano_fixedtau05_s24
+[run ] GPU=6 mooc_ano_fixedtau05_s42
+[done] mooc_ano_fixedtau05_s42
+[run ] GPU=6 mooc_ano_fixedtau05_s7
+[done] mooc_ano_fixedtau05_s7
+[run ] GPU=6 mooc_ano_fixedtau05_s13
+[done] mooc_ano_fixedtau05_s13
+[run ] GPU=6 mooc_ano_fixedtau05_s99
+[done] mooc_ano_fixedtau05_s99
+=== KAIROS multi-seed: arxiv classification (GCN, tau=0.5) ===
+[run ] GPU=6 arxiv_gcn_fixedtau05_s24
+[done] arxiv_gcn_fixedtau05_s24
+[run ] GPU=6 arxiv_gcn_fixedtau05_s42
+[done] arxiv_gcn_fixedtau05_s42
+[run ] GPU=6 arxiv_gcn_fixedtau05_s7
+[done] arxiv_gcn_fixedtau05_s7
+[run ] GPU=6 arxiv_gcn_fixedtau05_s13
+[done] arxiv_gcn_fixedtau05_s13
+[run ] GPU=6 arxiv_gcn_fixedtau05_s99
+[done] arxiv_gcn_fixedtau05_s99
+=== KAIROS multi-seed: arxiv anomaly detection ===
+[run ] GPU=6 arxiv_ano_fixedtau05_s24
+/nas/home/jahin/KAIROS/KAIROS/newds_multiseed_queue.sh: line 19: /nas/home/jahin/KAIROS/runs/arxiv_ano_fixedtau05_s24.log: No space left on device
+[done] arxiv_ano_fixedtau05_s24
+[run ] GPU=6 arxiv_ano_fixedtau05_s42
+/nas/home/jahin/KAIROS/KAIROS/newds_multiseed_queue.sh: line 19: /nas/home/jahin/KAIROS/runs/arxiv_ano_fixedtau05_s42.log: No space left on device
+[done] arxiv_ano_fixedtau05_s42
+[run ] GPU=6 arxiv_ano_fixedtau05_s7
+/nas/home/jahin/KAIROS/KAIROS/newds_multiseed_queue.sh: line 19: /nas/home/jahin/KAIROS/runs/arxiv_ano_fixedtau05_s7.log: No space left on device
+[done] arxiv_ano_fixedtau05_s7
+[run ] GPU=6 arxiv_ano_fixedtau05_s13
+/nas/home/jahin/KAIROS/KAIROS/newds_multiseed_queue.sh: line 19: /nas/home/jahin/KAIROS/runs/arxiv_ano_fixedtau05_s13.log: No space left on device
+[done] arxiv_ano_fixedtau05_s13
+[run ] GPU=6 arxiv_ano_fixedtau05_s99
+/nas/home/jahin/KAIROS/KAIROS/newds_multiseed_queue.sh: line 19: /nas/home/jahin/KAIROS/runs/arxiv_ano_fixedtau05_s99.log: No space left on device
+[done] arxiv_ano_fixedtau05_s99
+=== new-dataset KAIROS queue complete on GPU 6 ===

@@ -1,0 +1,7 @@
+[skip] dblp_canonical_s42 (already has result)
+[skip] bitcoinotc_canonical_s42 (already has result)
+[skip] bitotc_canonical_s42 (already has result)
+[skip] bitalpha_canonical_s42 (already has result)
+[run ] GPU=7 tax51_canonical_s42
+[done] tax51_canonical_s42
+Queue anomaly_seed42 on GPU 7 complete.

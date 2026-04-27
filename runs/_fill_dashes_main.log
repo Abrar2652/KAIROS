@@ -1,0 +1,149 @@
+=== 1. Reddit GCN test (seed 24) ===
+[run ] GPU=6 reddit_gcn_fixedtau05_s24
+[done] reddit_gcn_fixedtau05_s24
+=== 2. Tau-sweep fills ===
+[run ] GPU=6 dblp_fixedtau02_s24
+[done] dblp_fixedtau02_s24
+[run ] GPU=6 dblp_fixedtau03_s24
+[done] dblp_fixedtau03_s24
+[run ] GPU=6 dblp_fixedtau07_s24
+[done] dblp_fixedtau07_s24
+[run ] GPU=6 dblp_fixedtau10_s24
+[done] dblp_fixedtau10_s24
+[run ] GPU=6 tax51_fixedtau02_s24
+[done] tax51_fixedtau02_s24
+[run ] GPU=6 tax51_fixedtau03_s24
+[done] tax51_fixedtau03_s24
+[run ] GPU=6 tax51_fixedtau07_s24
+[done] tax51_fixedtau07_s24
+[run ] GPU=6 tax51_fixedtau10_s24
+[done] tax51_fixedtau10_s24
+[run ] GPU=6 bitcoinotc_fixedtau02_s24
+[done] bitcoinotc_fixedtau02_s24
+[run ] GPU=6 bitotc_fixedtau02_s24
+[done] bitotc_fixedtau02_s24
+=== 3. Backbone fills ===
+[run ] GPU=6 dblp_gcn_fixedtau05_s24
+[done] dblp_gcn_fixedtau05_s24
+[run ] GPU=6 dblp_gcn_fixedtau05_s42
+[done] dblp_gcn_fixedtau05_s42
+[run ] GPU=6 dblp_gcn_fixedtau05_s7
+[done] dblp_gcn_fixedtau05_s7
+[run ] GPU=6 dblp_gcn_fixedtau05_s13
+[done] dblp_gcn_fixedtau05_s13
+[run ] GPU=6 dblp_gcn_fixedtau05_s99
+[done] dblp_gcn_fixedtau05_s99
+[run ] GPU=6 dblp_sgc_fixedtau05_s24
+[done] dblp_sgc_fixedtau05_s24
+[run ] GPU=6 dblp_sgc_fixedtau05_s42
+[done] dblp_sgc_fixedtau05_s42
+[run ] GPU=6 dblp_sgc_fixedtau05_s7
+[done] dblp_sgc_fixedtau05_s7
+[run ] GPU=6 dblp_sgc_fixedtau05_s13
+[done] dblp_sgc_fixedtau05_s13
+[run ] GPU=6 dblp_sgc_fixedtau05_s99
+[done] dblp_sgc_fixedtau05_s99
+[run ] GPU=6 dblp_sage_fixedtau05_s24
+[done] dblp_sage_fixedtau05_s24
+[run ] GPU=6 dblp_sage_fixedtau05_s42
+[done] dblp_sage_fixedtau05_s42
+[run ] GPU=6 dblp_sage_fixedtau05_s7
+[done] dblp_sage_fixedtau05_s7
+[run ] GPU=6 dblp_sage_fixedtau05_s13
+[done] dblp_sage_fixedtau05_s13
+[run ] GPU=6 dblp_sage_fixedtau05_s99
+[done] dblp_sage_fixedtau05_s99
+[run ] GPU=6 dblp_h2gcn_fixedtau05_s24
+[done] dblp_h2gcn_fixedtau05_s24
+[run ] GPU=6 dblp_h2gcn_fixedtau05_s42
+[done] dblp_h2gcn_fixedtau05_s42
+[run ] GPU=6 dblp_h2gcn_fixedtau05_s7
+[done] dblp_h2gcn_fixedtau05_s7
+[run ] GPU=6 dblp_h2gcn_fixedtau05_s13
+[done] dblp_h2gcn_fixedtau05_s13
+[run ] GPU=6 dblp_h2gcn_fixedtau05_s99
+[done] dblp_h2gcn_fixedtau05_s99
+[run ] GPU=6 tax51_gcn_fixedtau05_s24
+[done] tax51_gcn_fixedtau05_s24
+[run ] GPU=6 tax51_gcn_fixedtau05_s42
+[done] tax51_gcn_fixedtau05_s42
+[run ] GPU=6 tax51_gcn_fixedtau05_s7
+[done] tax51_gcn_fixedtau05_s7
+[run ] GPU=6 tax51_gcn_fixedtau05_s13
+[done] tax51_gcn_fixedtau05_s13
+[run ] GPU=6 tax51_gcn_fixedtau05_s99
+[done] tax51_gcn_fixedtau05_s99
+[run ] GPU=6 tax51_sgc_fixedtau05_s24
+[done] tax51_sgc_fixedtau05_s24
+[run ] GPU=6 tax51_sgc_fixedtau05_s42
+[done] tax51_sgc_fixedtau05_s42
+[run ] GPU=6 tax51_sgc_fixedtau05_s7
+[done] tax51_sgc_fixedtau05_s7
+[run ] GPU=6 tax51_sgc_fixedtau05_s13
+[done] tax51_sgc_fixedtau05_s13
+[run ] GPU=6 tax51_sgc_fixedtau05_s99
+[done] tax51_sgc_fixedtau05_s99
+[run ] GPU=6 tax51_sage_fixedtau05_s24
+[done] tax51_sage_fixedtau05_s24
+[run ] GPU=6 tax51_sage_fixedtau05_s42
+[done] tax51_sage_fixedtau05_s42
+[run ] GPU=6 tax51_sage_fixedtau05_s7
+[done] tax51_sage_fixedtau05_s7
+[run ] GPU=6 tax51_sage_fixedtau05_s13
+[done] tax51_sage_fixedtau05_s13
+[run ] GPU=6 tax51_sage_fixedtau05_s99
+[done] tax51_sage_fixedtau05_s99
+[run ] GPU=6 tax51_h2gcn_fixedtau05_s24
+[done] tax51_h2gcn_fixedtau05_s24
+[run ] GPU=6 tax51_h2gcn_fixedtau05_s42
+[done] tax51_h2gcn_fixedtau05_s42
+[run ] GPU=6 tax51_h2gcn_fixedtau05_s7
+[done] tax51_h2gcn_fixedtau05_s7
+[run ] GPU=6 tax51_h2gcn_fixedtau05_s13
+[done] tax51_h2gcn_fixedtau05_s13
+[run ] GPU=6 tax51_h2gcn_fixedtau05_s99
+[done] tax51_h2gcn_fixedtau05_s99
+[run ] GPU=6 bitcoinotc_sgc_fixedtau05_s24
+[done] bitcoinotc_sgc_fixedtau05_s24
+[run ] GPU=6 bitcoinotc_sgc_fixedtau05_s42
+[done] bitcoinotc_sgc_fixedtau05_s42
+[run ] GPU=6 bitcoinotc_sgc_fixedtau05_s7
+[done] bitcoinotc_sgc_fixedtau05_s7
+[run ] GPU=6 bitcoinotc_sgc_fixedtau05_s13
+[done] bitcoinotc_sgc_fixedtau05_s13
+[run ] GPU=6 bitcoinotc_sgc_fixedtau05_s99
+[done] bitcoinotc_sgc_fixedtau05_s99
+[run ] GPU=6 bitcoinotc_sage_fixedtau05_s24
+[done] bitcoinotc_sage_fixedtau05_s24
+[run ] GPU=6 bitcoinotc_sage_fixedtau05_s42
+[done] bitcoinotc_sage_fixedtau05_s42
+[run ] GPU=6 bitcoinotc_sage_fixedtau05_s7
+[done] bitcoinotc_sage_fixedtau05_s7
+[run ] GPU=6 bitcoinotc_sage_fixedtau05_s13
+[done] bitcoinotc_sage_fixedtau05_s13
+[run ] GPU=6 bitcoinotc_sage_fixedtau05_s99
+[done] bitcoinotc_sage_fixedtau05_s99
+[run ] GPU=6 bitcoinotc_h2gcn_fixedtau05_s24
+[done] bitcoinotc_h2gcn_fixedtau05_s24
+[run ] GPU=6 bitcoinotc_h2gcn_fixedtau05_s42
+[done] bitcoinotc_h2gcn_fixedtau05_s42
+[run ] GPU=6 bitcoinotc_h2gcn_fixedtau05_s7
+[done] bitcoinotc_h2gcn_fixedtau05_s7
+[run ] GPU=6 bitcoinotc_h2gcn_fixedtau05_s13
+[done] bitcoinotc_h2gcn_fixedtau05_s13
+[run ] GPU=6 bitcoinotc_h2gcn_fixedtau05_s99
+[done] bitcoinotc_h2gcn_fixedtau05_s99
+[run ] GPU=6 bitalpha_h2gcn_fixedtau05_s24
+[done] bitalpha_h2gcn_fixedtau05_s24
+[run ] GPU=6 bitalpha_h2gcn_fixedtau05_s42
+[done] bitalpha_h2gcn_fixedtau05_s42
+[run ] GPU=6 bitalpha_h2gcn_fixedtau05_s7
+[done] bitalpha_h2gcn_fixedtau05_s7
+[run ] GPU=6 bitalpha_h2gcn_fixedtau05_s13
+[done] bitalpha_h2gcn_fixedtau05_s13
+[run ] GPU=6 bitalpha_h2gcn_fixedtau05_s99
+[done] bitalpha_h2gcn_fixedtau05_s99
+=== 4. Koopman Reddit anomaly ===
+[run ] GPU=6 reddit_no_koop_anomaly_s24
+[done] reddit_no_koop_anomaly_s24
+=== fill_dashes_queue.sh complete on GPU 6 ===

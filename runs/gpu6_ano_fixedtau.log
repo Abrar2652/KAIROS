@@ -1,0 +1,4 @@
+run dblp_ano_fixedtau05_s24
+run bitcoinotc_ano_fixedtau05_s24
+run bitotc_ano_fixedtau05_s24
+GPU 6 anomaly fixed_tau sweep done

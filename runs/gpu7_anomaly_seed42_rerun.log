@@ -1,0 +1,11 @@
+[run ] GPU=7 dblp_ano_canonical_s42
+[done] dblp_ano_canonical_s42
+[run ] GPU=7 bitcoinotc_ano_canonical_s42
+[done] bitcoinotc_ano_canonical_s42
+[run ] GPU=7 bitotc_ano_canonical_s42
+[done] bitotc_ano_canonical_s42
+[run ] GPU=7 bitalpha_ano_canonical_s42
+[done] bitalpha_ano_canonical_s42
+[run ] GPU=7 tax51_ano_canonical_s42
+[done] tax51_ano_canonical_s42
+Queue anomaly_seed42 on GPU 7 complete.

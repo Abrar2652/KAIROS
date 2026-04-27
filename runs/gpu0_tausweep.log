@@ -1,0 +1,8 @@
+bitalpha_fixedtau05_s24 done; launching τ sweep on GPU 0
+run bitcoinotc_fixedtau03_s24
+run bitotc_fixedtau03_s24
+run bitcoinotc_fixedtau07_s24
+run bitotc_fixedtau07_s24
+run bitcoinotc_fixedtau10_s24
+run bitotc_fixedtau10_s24
+τ sweep complete

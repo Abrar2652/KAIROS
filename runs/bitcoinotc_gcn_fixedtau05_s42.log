@@ -1,0 +1,67 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[ablate] mode=fixed_tau seed=42 dataset=bitcoinotc task=classification
+/nas/home/jahin/.local/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+[KAIROS] Using device: cuda:0 (NVIDIA RTX A6000)
+[KAIROS] Classification task → λ_koop overridden to 0.0
+[KAIROS] Small graph (5881 nodes) → full-neighbour training sampler
+
+[KAIROS] Backbone: gcn
+Training 25 epochs | 3 views | λ_koop=0.0 | PPR α=0.15
+
+/nas/home/jahin/.local/lib/python3.10/site-packages/dgl/dataloading/dataloader.py:1144: DGLWarning: Dataloader CPU affinity opt is not enabled, consider switching it on (see enable_cpu_affinity() or CPU best practices for DGL [https://docs.dgl.ai/tutorials/cpu/cpu_best_practises.html])
+  dgl_warning(
+Epoch 00000 | NCE 37.8369 | KOOP 0.0000 | τ 0.5000 | Total 37.8369
+Epoch 00001 | NCE 35.9568 | KOOP 0.0000 | τ 0.5000 | Total 35.9568
+Epoch 00002 | NCE 34.4702 | KOOP 0.0000 | τ 0.5000 | Total 34.4702
+Epoch 00003 | NCE 33.3921 | KOOP 0.0000 | τ 0.5000 | Total 33.3921
+Epoch 00004 | NCE 32.7376 | KOOP 0.0000 | τ 0.5000 | Total 32.7376
+Epoch 00005 | NCE 30.8747 | KOOP 0.0000 | τ 0.5000 | Total 30.8747
+Epoch 00006 | NCE 32.0172 | KOOP 0.0000 | τ 0.5000 | Total 32.0172
+Epoch 00007 | NCE 31.6690 | KOOP 0.0000 | τ 0.5000 | Total 31.6690
+Epoch 00008 | NCE 30.1716 | KOOP 0.0000 | τ 0.5000 | Total 30.1716
+Epoch 00009 | NCE 31.3700 | KOOP 0.0000 | τ 0.5000 | Total 31.3700
+Epoch 00010 | NCE 31.2425 | KOOP 0.0000 | τ 0.5000 | Total 31.2425
+Epoch 00011 | NCE 31.1864 | KOOP 0.0000 | τ 0.5000 | Total 31.1864
+Epoch 00012 | NCE 30.8368 | KOOP 0.0000 | τ 0.5000 | Total 30.8368
+Epoch 00013 | NCE 29.5622 | KOOP 0.0000 | τ 0.5000 | Total 29.5622
+Epoch 00014 | NCE 29.4440 | KOOP 0.0000 | τ 0.5000 | Total 29.4440
+Epoch 00015 | NCE 30.6069 | KOOP 0.0000 | τ 0.5000 | Total 30.6069
+Epoch 00016 | NCE 30.5586 | KOOP 0.0000 | τ 0.5000 | Total 30.5586
+Epoch 00017 | NCE 30.5355 | KOOP 0.0000 | τ 0.5000 | Total 30.5355
+Epoch 00018 | NCE 30.3752 | KOOP 0.0000 | τ 0.5000 | Total 30.3752
+Epoch 00019 | NCE 29.2534 | KOOP 0.0000 | τ 0.5000 | Total 29.2534
+Epoch 00020 | NCE 30.3611 | KOOP 0.0000 | τ 0.5000 | Total 30.3611
+Epoch 00021 | NCE 30.2626 | KOOP 0.0000 | τ 0.5000 | Total 30.2626
+Epoch 00022 | NCE 30.4550 | KOOP 0.0000 | τ 0.5000 | Total 30.4550
+Epoch 00023 | NCE 29.1939 | KOOP 0.0000 | τ 0.5000 | Total 29.1939
+Epoch 00024 | NCE 30.3566 | KOOP 0.0000 | τ 0.5000 | Total 30.3566
+  LinEval    0 | train 0.1772 | val 0.3282 | micro 0.3209 | wei 0.3247
+  LinEval  500 | train 0.6576 | val 0.5765 | micro 0.5858 | wei 0.5751
+  LinEval 1000 | train 0.6712 | val 0.5663 | micro 0.5814 | wei 0.5734
+  LinEval 1500 | train 0.6831 | val 0.5663 | micro 0.5795 | wei 0.5725
+  LinEval 1999 | train 0.6865 | val 0.5629 | micro 0.5790 | wei 0.5721
+  LinEval    0 | train 0.4055 | val 0.4235 | micro 0.4127 | wei 0.3449
+  LinEval  500 | train 0.6678 | val 0.5765 | micro 0.5846 | wei 0.5748
+  LinEval 1000 | train 0.6763 | val 0.5697 | micro 0.5814 | wei 0.5742
+  LinEval 1500 | train 0.6865 | val 0.5697 | micro 0.5803 | wei 0.5734
+  LinEval 1999 | train 0.6882 | val 0.5697 | micro 0.5788 | wei 0.5723
+  LinEval    0 | train 0.2828 | val 0.2908 | micro 0.2830 | wei 0.2459
+  LinEval  500 | train 0.6576 | val 0.5816 | micro 0.5875 | wei 0.5766
+  LinEval 1000 | train 0.6729 | val 0.5680 | micro 0.5833 | wei 0.5754
+  LinEval 1500 | train 0.6797 | val 0.5646 | micro 0.5795 | wei 0.5724
+  LinEval 1999 | train 0.6865 | val 0.5646 | micro 0.5786 | wei 0.5717
+  LinEval    0 | train 0.4600 | val 0.4541 | micro 0.4607 | wei 0.3004
+  LinEval  500 | train 0.6542 | val 0.5816 | micro 0.5899 | wei 0.5772
+  LinEval 1000 | train 0.6729 | val 0.5714 | micro 0.5807 | wei 0.5725
+  LinEval 1500 | train 0.6763 | val 0.5680 | micro 0.5797 | wei 0.5724
+  LinEval 1999 | train 0.6831 | val 0.5697 | micro 0.5795 | wei 0.5724
+  LinEval    0 | train 0.3867 | val 0.3810 | micro 0.3961 | wei 0.3215
+  LinEval  500 | train 0.6661 | val 0.5680 | micro 0.5839 | wei 0.5745
+  LinEval 1000 | train 0.6814 | val 0.5629 | micro 0.5820 | wei 0.5749
+  LinEval 1500 | train 0.6882 | val 0.5680 | micro 0.5788 | wei 0.5721
+  LinEval 1999 | train 0.6848 | val 0.5714 | micro 0.5795 | wei 0.5729
+
+Linear evaluation  Acc: 0.5929  Wei-F1: 0.5749
+[ablate-result] ablation=fixed_tau seed=42 dataset=bitcoinotc task=classification result={'accuracy': 0.592902660369873, 'weighted_f1': 0.5749033093452454}

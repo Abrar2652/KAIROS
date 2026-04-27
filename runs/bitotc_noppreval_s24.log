@@ -1,0 +1,64 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[ablate] mode=no_ppr_eval seed=24 dataset=bitotc task=classification
+/nas/home/jahin/.local/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+[KAIROS] Using device: cuda:0 (NVIDIA RTX A6000)
+[KAIROS] Classification task → λ_koop overridden to 0.0
+[KAIROS] Small graph (4863 nodes) → full-neighbour training sampler
+
+Training 50 epochs | 4 views | λ_koop=0.0 | PPR α=0.15
+
+/nas/home/jahin/.local/lib/python3.10/site-packages/dgl/dataloading/dataloader.py:1144: DGLWarning: Dataloader CPU affinity opt is not enabled, consider switching it on (see enable_cpu_affinity() or CPU best practices for DGL [https://docs.dgl.ai/tutorials/cpu/cpu_best_practises.html])
+  dgl_warning(
+Epoch 00000 | NCE 82.6236 | KOOP 0.0000 | τ 0.0703 | Total 82.6236
+Epoch 00001 | NCE 65.7227 | KOOP 0.0000 | τ 0.0705 | Total 65.7227
+Epoch 00002 | NCE 55.1382 | KOOP 0.0000 | τ 0.0708 | Total 55.1382
+Epoch 00003 | NCE 52.7805 | KOOP 0.0000 | τ 0.0709 | Total 52.7805
+Epoch 00004 | NCE 48.2863 | KOOP 0.0000 | τ 0.0710 | Total 48.2863
+Epoch 00005 | NCE 44.7683 | KOOP 0.0000 | τ 0.0709 | Total 44.7683
+Epoch 00006 | NCE 45.2422 | KOOP 0.0000 | τ 0.0709 | Total 45.2422
+Epoch 00007 | NCE 38.5562 | KOOP 0.0000 | τ 0.0708 | Total 38.5562
+Epoch 00008 | NCE 41.4574 | KOOP 0.0000 | τ 0.0706 | Total 41.4574
+Epoch 00009 | NCE 38.6541 | KOOP 0.0000 | τ 0.0705 | Total 38.6541
+Epoch 00010 | NCE 36.2583 | KOOP 0.0000 | τ 0.0704 | Total 36.2583
+Epoch 00011 | NCE 32.3905 | KOOP 0.0000 | τ 0.0702 | Total 32.3905
+Epoch 00012 | NCE 31.1652 | KOOP 0.0000 | τ 0.0700 | Total 31.1652
+Epoch 00013 | NCE 31.3903 | KOOP 0.0000 | τ 0.0698 | Total 31.3903
+Epoch 00014 | NCE 28.8029 | KOOP 0.0000 | τ 0.0696 | Total 28.8029
+Epoch 00015 | NCE 28.0383 | KOOP 0.0000 | τ 0.0694 | Total 28.0383
+Epoch 00016 | NCE 26.7823 | KOOP 0.0000 | τ 0.0693 | Total 26.7823
+Epoch 00017 | NCE 25.6485 | KOOP 0.0000 | τ 0.0691 | Total 25.6485
+Epoch 00018 | NCE 27.2360 | KOOP 0.0000 | τ 0.0689 | Total 27.2360
+Epoch 00019 | NCE 24.9678 | KOOP 0.0000 | τ 0.0687 | Total 24.9678
+Epoch 00020 | NCE 26.1072 | KOOP 0.0000 | τ 0.0685 | Total 26.1072
+Epoch 00021 | NCE 23.3298 | KOOP 0.0000 | τ 0.0684 | Total 23.3298
+Epoch 00022 | NCE 24.0509 | KOOP 0.0000 | τ 0.0682 | Total 24.0509
+Epoch 00023 | NCE 24.3909 | KOOP 0.0000 | τ 0.0681 | Total 24.3909
+Epoch 00024 | NCE 22.6916 | KOOP 0.0000 | τ 0.0679 | Total 22.6916
+Epoch 00025 | NCE 22.1462 | KOOP 0.0000 | τ 0.0678 | Total 22.1462
+Epoch 00026 | NCE 22.0160 | KOOP 0.0000 | τ 0.0677 | Total 22.0160
+Epoch 00027 | NCE 20.4112 | KOOP 0.0000 | τ 0.0675 | Total 20.4112
+Epoch 00028 | NCE 21.6436 | KOOP 0.0000 | τ 0.0674 | Total 21.6436
+Epoch 00029 | NCE 21.3536 | KOOP 0.0000 | τ 0.0673 | Total 21.3536
+Epoch 00030 | NCE 19.9312 | KOOP 0.0000 | τ 0.0672 | Total 19.9312
+Epoch 00031 | NCE 22.4939 | KOOP 0.0000 | τ 0.0671 | Total 22.4939
+Epoch 00032 | NCE 19.3846 | KOOP 0.0000 | τ 0.0671 | Total 19.3846
+Epoch 00033 | NCE 17.7110 | KOOP 0.0000 | τ 0.0670 | Total 17.7110
+Epoch 00034 | NCE 21.2810 | KOOP 0.0000 | τ 0.0669 | Total 21.2810
+Epoch 00035 | NCE 18.8504 | KOOP 0.0000 | τ 0.0669 | Total 18.8504
+Epoch 00036 | NCE 18.8417 | KOOP 0.0000 | τ 0.0668 | Total 18.8417
+Epoch 00037 | NCE 19.5703 | KOOP 0.0000 | τ 0.0668 | Total 19.5703
+Epoch 00038 | NCE 20.8662 | KOOP 0.0000 | τ 0.0667 | Total 20.8662
+Epoch 00039 | NCE 18.1743 | KOOP 0.0000 | τ 0.0667 | Total 18.1743
+Epoch 00040 | NCE 18.9454 | KOOP 0.0000 | τ 0.0667 | Total 18.9454
+Epoch 00041 | NCE 20.5524 | KOOP 0.0000 | τ 0.0666 | Total 20.5524
+Epoch 00042 | NCE 17.3568 | KOOP 0.0000 | τ 0.0666 | Total 17.3568
+Epoch 00043 | NCE 16.8042 | KOOP 0.0000 | τ 0.0666 | Total 16.8042
+Epoch 00044 | NCE 18.4670 | KOOP 0.0000 | τ 0.0666 | Total 18.4670
+Epoch 00045 | NCE 20.0655 | KOOP 0.0000 | τ 0.0666 | Total 20.0655
+Epoch 00046 | NCE 20.6677 | KOOP 0.0000 | τ 0.0666 | Total 20.6677
+Epoch 00047 | NCE 20.0880 | KOOP 0.0000 | τ 0.0666 | Total 20.0880
+Epoch 00048 | NCE 15.2662 | KOOP 0.0000 | τ 0.0666 | Total 15.2662
+Epoch 00049 | NCE 20.6661 | KOOP 0.0000 | τ 0.0666 | Total 20.6661
+[ablate-result] ablation=no_ppr_eval seed=24 dataset=bitotc task=classification result={'accuracy': 0.6219185146982981, 'weighted_f1': 0.4832531433803501}

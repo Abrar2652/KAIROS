@@ -1,0 +1,53 @@
+[bg  ] GPU=6 baseline_lp_mooc_classification_s24
+[bg  ] GPU=6 baseline_lp_email_eu_classification_s24
+[bg  ] GPU=6 baseline_lp_arxiv_classification_s24
+[bg  ] GPU=6 baseline_lp_elliptic_classification_s24
+[bg  ] GPU=6 baseline_gcn_mooc_classification_s24
+[bg  ] GPU=6 baseline_gcn_email_eu_classification_s24
+[bg  ] GPU=6 baseline_gcn_arxiv_classification_s24
+[bg  ] GPU=6 baseline_gcn_elliptic_classification_s24
+[bg  ] GPU=6 baseline_gat_mooc_classification_s24
+[bg  ] GPU=6 baseline_gat_email_eu_classification_s24
+[bg  ] GPU=6 baseline_gat_arxiv_classification_s24
+[bg  ] GPU=6 baseline_gat_elliptic_classification_s24
+[bg  ] GPU=6 baseline_sage_mooc_classification_s24
+[bg  ] GPU=6 baseline_sage_email_eu_classification_s24
+[bg  ] GPU=6 baseline_sage_arxiv_classification_s24
+[bg  ] GPU=6 baseline_sage_elliptic_classification_s24
+[bg  ] GPU=6 baseline_dgi_mooc_classification_s24
+[bg  ] GPU=6 baseline_dgi_email_eu_classification_s24
+[bg  ] GPU=6 baseline_dgi_arxiv_classification_s24
+[bg  ] GPU=6 baseline_dgi_elliptic_classification_s24
+[bg  ] GPU=6 baseline_ccassg_mooc_classification_s24
+[bg  ] GPU=6 baseline_ccassg_email_eu_classification_s24
+[bg  ] GPU=6 baseline_ccassg_arxiv_classification_s24
+[bg  ] GPU=6 baseline_ccassg_elliptic_classification_s24
+
+All classification baselines launched as background jobs.
+Running count: 14
+=== Wave 1 classification complete ===
+[bg  ] GPU=6 baseline_lp_mooc_anomaly_detection_s24
+[bg  ] GPU=6 baseline_lp_email_eu_anomaly_detection_s24
+[bg  ] GPU=6 baseline_lp_arxiv_anomaly_detection_s24
+[bg  ] GPU=6 baseline_lp_elliptic_anomaly_detection_s24
+[bg  ] GPU=6 baseline_gcn_mooc_anomaly_detection_s24
+[bg  ] GPU=6 baseline_gcn_email_eu_anomaly_detection_s24
+[bg  ] GPU=6 baseline_gcn_arxiv_anomaly_detection_s24
+[bg  ] GPU=6 baseline_gcn_elliptic_anomaly_detection_s24
+[bg  ] GPU=6 baseline_gat_mooc_anomaly_detection_s24
+[bg  ] GPU=6 baseline_gat_email_eu_anomaly_detection_s24
+[bg  ] GPU=6 baseline_gat_arxiv_anomaly_detection_s24
+[bg  ] GPU=6 baseline_gat_elliptic_anomaly_detection_s24
+[bg  ] GPU=6 baseline_sage_mooc_anomaly_detection_s24
+[bg  ] GPU=6 baseline_sage_email_eu_anomaly_detection_s24
+[bg  ] GPU=6 baseline_sage_arxiv_anomaly_detection_s24
+[bg  ] GPU=6 baseline_sage_elliptic_anomaly_detection_s24
+[bg  ] GPU=6 baseline_dgi_mooc_anomaly_detection_s24
+[bg  ] GPU=6 baseline_dgi_email_eu_anomaly_detection_s24
+[bg  ] GPU=6 baseline_dgi_arxiv_anomaly_detection_s24
+[bg  ] GPU=6 baseline_dgi_elliptic_anomaly_detection_s24
+[bg  ] GPU=6 baseline_ccassg_mooc_anomaly_detection_s24
+[bg  ] GPU=6 baseline_ccassg_email_eu_anomaly_detection_s24
+[bg  ] GPU=6 baseline_ccassg_arxiv_anomaly_detection_s24
+[bg  ] GPU=6 baseline_ccassg_elliptic_anomaly_detection_s24
+=== Wave 2 anomaly complete ===

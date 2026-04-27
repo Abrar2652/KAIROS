@@ -1,0 +1,11 @@
+[run ] GPU=6 bitotc_sage_fixedtau05_s24
+[done] bitotc_sage_fixedtau05_s24
+[run ] GPU=6 bitotc_sage_fixedtau05_s42
+[done] bitotc_sage_fixedtau05_s42
+[run ] GPU=6 bitotc_sage_fixedtau05_s7
+[done] bitotc_sage_fixedtau05_s7
+[run ] GPU=6 bitotc_sage_fixedtau05_s13
+[done] bitotc_sage_fixedtau05_s13
+[run ] GPU=6 bitotc_sage_fixedtau05_s99
+[done] bitotc_sage_fixedtau05_s99
+sage multi-seed for bitotc on GPU 6 complete.

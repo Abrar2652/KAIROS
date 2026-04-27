@@ -1,0 +1,39 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[ablate] mode=no_ppr_eval seed=24 dataset=bitcoinotc task=classification
+/nas/home/jahin/.local/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+[KAIROS] Using device: cuda:0 (NVIDIA RTX A6000)
+[KAIROS] Classification task → λ_koop overridden to 0.0
+[KAIROS] Small graph (5881 nodes) → full-neighbour training sampler
+
+Training 25 epochs | 3 views | λ_koop=0.0 | PPR α=0.15
+
+/nas/home/jahin/.local/lib/python3.10/site-packages/dgl/dataloading/dataloader.py:1144: DGLWarning: Dataloader CPU affinity opt is not enabled, consider switching it on (see enable_cpu_affinity() or CPU best practices for DGL [https://docs.dgl.ai/tutorials/cpu/cpu_best_practises.html])
+  dgl_warning(
+Epoch 00000 | NCE 41.7982 | KOOP 0.0000 | τ 0.0703 | Total 41.7982
+Epoch 00001 | NCE 34.3580 | KOOP 0.0000 | τ 0.0705 | Total 34.3580
+Epoch 00002 | NCE 30.3410 | KOOP 0.0000 | τ 0.0708 | Total 30.3410
+Epoch 00003 | NCE 27.2420 | KOOP 0.0000 | τ 0.0710 | Total 27.2420
+Epoch 00004 | NCE 25.7892 | KOOP 0.0000 | τ 0.0711 | Total 25.7892
+Epoch 00005 | NCE 24.4732 | KOOP 0.0000 | τ 0.0711 | Total 24.4732
+Epoch 00006 | NCE 19.4291 | KOOP 0.0000 | τ 0.0711 | Total 19.4291
+Epoch 00007 | NCE 18.4499 | KOOP 0.0000 | τ 0.0710 | Total 18.4499
+Epoch 00008 | NCE 17.4125 | KOOP 0.0000 | τ 0.0709 | Total 17.4125
+Epoch 00009 | NCE 19.9554 | KOOP 0.0000 | τ 0.0707 | Total 19.9554
+Epoch 00010 | NCE 15.7775 | KOOP 0.0000 | τ 0.0706 | Total 15.7775
+Epoch 00011 | NCE 18.5791 | KOOP 0.0000 | τ 0.0705 | Total 18.5791
+Epoch 00012 | NCE 18.5666 | KOOP 0.0000 | τ 0.0704 | Total 18.5666
+Epoch 00013 | NCE 17.7504 | KOOP 0.0000 | τ 0.0703 | Total 17.7504
+Epoch 00014 | NCE 17.5270 | KOOP 0.0000 | τ 0.0702 | Total 17.5270
+Epoch 00015 | NCE 17.0397 | KOOP 0.0000 | τ 0.0702 | Total 17.0397
+Epoch 00016 | NCE 16.5931 | KOOP 0.0000 | τ 0.0701 | Total 16.5931
+Epoch 00017 | NCE 16.1049 | KOOP 0.0000 | τ 0.0701 | Total 16.1049
+Epoch 00018 | NCE 15.9376 | KOOP 0.0000 | τ 0.0700 | Total 15.9376
+Epoch 00019 | NCE 15.5505 | KOOP 0.0000 | τ 0.0700 | Total 15.5505
+Epoch 00020 | NCE 11.8578 | KOOP 0.0000 | τ 0.0700 | Total 11.8578
+Epoch 00021 | NCE 15.9088 | KOOP 0.0000 | τ 0.0700 | Total 15.9088
+Epoch 00022 | NCE 15.5507 | KOOP 0.0000 | τ 0.0700 | Total 15.5507
+Epoch 00023 | NCE 11.9841 | KOOP 0.0000 | τ 0.0700 | Total 11.9841
+Epoch 00024 | NCE 15.5946 | KOOP 0.0000 | τ 0.0700 | Total 15.5946
+[ablate-result] ablation=no_ppr_eval seed=24 dataset=bitcoinotc task=classification result={'accuracy': 0.5242243943901402, 'weighted_f1': 0.5211614239313027}

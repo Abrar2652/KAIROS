@@ -1,0 +1,17 @@
+[run ] GPU=5 bitalpha_tune_h64_l1_canonical_s24
+[done] bitalpha_tune_h64_l1_canonical_s24
+[run ] GPU=5 bitalpha_tune_h64_l1_fixed05_s24
+[done] bitalpha_tune_h64_l1_fixed05_s24
+[run ] GPU=5 bitalpha_tune_h64_l2_canonical_s24
+[done] bitalpha_tune_h64_l2_canonical_s24
+[run ] GPU=5 bitalpha_tune_h64_l2_fixed05_s24
+[done] bitalpha_tune_h64_l2_fixed05_s24
+[run ] GPU=5 bitalpha_tune_h128_l1_canonical_s24
+[done] bitalpha_tune_h128_l1_canonical_s24
+[run ] GPU=5 bitalpha_tune_h128_l1_fixed05_s24
+[done] bitalpha_tune_h128_l1_fixed05_s24
+[run ] GPU=5 bitalpha_tune_h128_l2_canonical_s24
+[done] bitalpha_tune_h128_l2_canonical_s24
+[run ] GPU=5 bitalpha_tune_h128_l2_fixed05_s24
+[done] bitalpha_tune_h128_l2_fixed05_s24
+Per-dataset tune for bitalpha on GPU 5 complete.

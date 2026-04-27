@@ -1,0 +1,11 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+Constructing structural anomaly nodes...
+Done. 300 structural nodes (4500 edges)
+
+Constructing attribute anomaly nodes...
+Done. 300 attribute anomaly nodes
+
+[baseline-result] method=lp dataset=mooc task=anomaly_detection result={'auc': 0.510223}

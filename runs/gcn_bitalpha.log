@@ -1,0 +1,11 @@
+[run ] GPU=0 bitalpha_gcn_fixedtau05_s24
+[done] bitalpha_gcn_fixedtau05_s24
+[run ] GPU=0 bitalpha_gcn_fixedtau05_s42
+[done] bitalpha_gcn_fixedtau05_s42
+[run ] GPU=0 bitalpha_gcn_fixedtau05_s7
+[done] bitalpha_gcn_fixedtau05_s7
+[run ] GPU=0 bitalpha_gcn_fixedtau05_s13
+[done] bitalpha_gcn_fixedtau05_s13
+[run ] GPU=0 bitalpha_gcn_fixedtau05_s99
+[done] bitalpha_gcn_fixedtau05_s99
+GCN multi-seed for bitalpha on GPU 0 complete.

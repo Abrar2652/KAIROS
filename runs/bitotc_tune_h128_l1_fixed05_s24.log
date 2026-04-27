@@ -1,0 +1,29 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[ablate] mode=fixed_tau seed=24 dataset=bitotc task=classification
+/nas/home/jahin/.local/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+[KAIROS] Using device: cuda:0 (NVIDIA RTX A6000)
+[KAIROS] Classification task → λ_koop overridden to 0.0
+[KAIROS] Small graph (4863 nodes) → full-neighbour training sampler
+
+Traceback (most recent call last):
+  File "/nas/home/jahin/KAIROS/KAIROS/ablate.py", line 233, in <module>
+    main()
+  File "/nas/home/jahin/KAIROS/KAIROS/ablate.py", line 218, in main
+    r = kmain.train(
+  File "/nas/home/jahin/KAIROS/KAIROS/main.py", line 222, in train
+    ).to(device_id)
+  File "/nas/home/jahin/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1174, in to
+    return self._apply(convert)
+  File "/nas/home/jahin/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 780, in _apply
+    module._apply(fn)
+  File "/nas/home/jahin/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 805, in _apply
+    param_applied = fn(param)
+  File "/nas/home/jahin/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in convert
+    return t.to(
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

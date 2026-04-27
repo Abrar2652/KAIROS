@@ -1,0 +1,6 @@
+reddit_clf done; launching big_queue on GPU 6
+[run ] GPU=6 dblp_fixedtau05_s24
+[done] dblp_fixedtau05_s24
+[run ] GPU=6 tax51_fixedtau05_s24
+[done] tax51_fixedtau05_s24
+Queue big_queue on GPU 6 complete.

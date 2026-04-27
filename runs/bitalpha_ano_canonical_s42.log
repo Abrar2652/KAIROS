@@ -1,0 +1,122 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[ablate] mode=none seed=42 dataset=bitalpha task=anomaly_detection
+/nas/home/jahin/.local/lib/python3.10/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+[KAIROS] Using device: cuda:0 (NVIDIA RTX A6000)
+Constructing structural anomaly nodes...
+Done. 150 structural nodes (2250 edges)
+
+Constructing attribute anomaly nodes...
+Done. 150 attribute anomaly nodes
+
+[KAIROS] Small graph (3219 nodes) → full-neighbour training sampler
+
+Training 100 epochs | 5 views | λ_koop=1.0 | PPR α=0.15
+
+/nas/home/jahin/.local/lib/python3.10/site-packages/dgl/dataloading/dataloader.py:1144: DGLWarning: Dataloader CPU affinity opt is not enabled, consider switching it on (see enable_cpu_affinity() or CPU best practices for DGL [https://docs.dgl.ai/tutorials/cpu/cpu_best_practises.html])
+  dgl_warning(
+Epoch 00000 | NCE 137.7958 | KOOP 0.1213 | τ 0.0703 | Total 137.9171
+Epoch 00001 | NCE 113.4961 | KOOP 0.1052 | τ 0.0705 | Total 113.6013
+Epoch 00002 | NCE 99.5128 | KOOP 0.0926 | τ 0.0708 | Total 99.6053
+Epoch 00003 | NCE 91.9687 | KOOP 0.0788 | τ 0.0709 | Total 92.0475
+Epoch 00004 | NCE 85.0421 | KOOP 0.0714 | τ 0.0710 | Total 85.1134
+Epoch 00005 | NCE 82.4387 | KOOP 0.0684 | τ 0.0710 | Total 82.5071
+Epoch 00006 | NCE 75.9592 | KOOP 0.0581 | τ 0.0710 | Total 76.0174
+Epoch 00007 | NCE 74.4645 | KOOP 0.0612 | τ 0.0709 | Total 74.5258
+Epoch 00008 | NCE 68.5788 | KOOP 0.0510 | τ 0.0708 | Total 68.6298
+Epoch 00009 | NCE 66.1278 | KOOP 0.0545 | τ 0.0707 | Total 66.1824
+Epoch 00010 | NCE 61.8319 | KOOP 0.0440 | τ 0.0705 | Total 61.8760
+Epoch 00011 | NCE 61.0848 | KOOP 0.0424 | τ 0.0703 | Total 61.1273
+Epoch 00012 | NCE 59.5466 | KOOP 0.0505 | τ 0.0701 | Total 59.5971
+Epoch 00013 | NCE 57.2625 | KOOP 0.0502 | τ 0.0700 | Total 57.3127
+Epoch 00014 | NCE 54.3498 | KOOP 0.0435 | τ 0.0698 | Total 54.3933
+Epoch 00015 | NCE 53.7763 | KOOP 0.0493 | τ 0.0696 | Total 53.8256
+Epoch 00016 | NCE 48.5074 | KOOP 0.0369 | τ 0.0694 | Total 48.5443
+Epoch 00017 | NCE 46.6535 | KOOP 0.0364 | τ 0.0692 | Total 46.6899
+Epoch 00018 | NCE 46.1298 | KOOP 0.0385 | τ 0.0690 | Total 46.1684
+Epoch 00019 | NCE 46.2483 | KOOP 0.0424 | τ 0.0688 | Total 46.2907
+Epoch 00020 | NCE 44.1088 | KOOP 0.0393 | τ 0.0686 | Total 44.1481
+Epoch 00021 | NCE 43.8133 | KOOP 0.0475 | τ 0.0684 | Total 43.8609
+Epoch 00022 | NCE 43.0719 | KOOP 0.0475 | τ 0.0682 | Total 43.1194
+Epoch 00023 | NCE 39.3901 | KOOP 0.0415 | τ 0.0680 | Total 39.4316
+Epoch 00024 | NCE 39.0995 | KOOP 0.0388 | τ 0.0678 | Total 39.1384
+Epoch 00025 | NCE 37.8702 | KOOP 0.0383 | τ 0.0676 | Total 37.9086
+Epoch 00026 | NCE 35.9042 | KOOP 0.0338 | τ 0.0674 | Total 35.9380
+Epoch 00027 | NCE 37.0520 | KOOP 0.0426 | τ 0.0672 | Total 37.0946
+Epoch 00028 | NCE 34.8714 | KOOP 0.0344 | τ 0.0670 | Total 34.9058
+Epoch 00029 | NCE 33.4376 | KOOP 0.0339 | τ 0.0668 | Total 33.4715
+Epoch 00030 | NCE 32.7493 | KOOP 0.0341 | τ 0.0666 | Total 32.7834
+Epoch 00031 | NCE 31.8804 | KOOP 0.0358 | τ 0.0664 | Total 31.9162
+Epoch 00032 | NCE 30.0738 | KOOP 0.0340 | τ 0.0661 | Total 30.1078
+Epoch 00033 | NCE 30.7313 | KOOP 0.0428 | τ 0.0659 | Total 30.7741
+Epoch 00034 | NCE 30.1024 | KOOP 0.0361 | τ 0.0657 | Total 30.1385
+Epoch 00035 | NCE 29.3289 | KOOP 0.0334 | τ 0.0655 | Total 29.3623
+Epoch 00036 | NCE 28.9979 | KOOP 0.0391 | τ 0.0653 | Total 29.0370
+Epoch 00037 | NCE 27.4078 | KOOP 0.0339 | τ 0.0651 | Total 27.4417
+Epoch 00038 | NCE 26.2488 | KOOP 0.0286 | τ 0.0649 | Total 26.2774
+Epoch 00039 | NCE 27.4008 | KOOP 0.0348 | τ 0.0647 | Total 27.4356
+Epoch 00040 | NCE 27.4866 | KOOP 0.0396 | τ 0.0645 | Total 27.5262
+Epoch 00041 | NCE 29.1002 | KOOP 0.0452 | τ 0.0643 | Total 29.1454
+Epoch 00042 | NCE 26.1108 | KOOP 0.0368 | τ 0.0641 | Total 26.1476
+Epoch 00043 | NCE 27.8947 | KOOP 0.0378 | τ 0.0640 | Total 27.9325
+Epoch 00044 | NCE 23.8341 | KOOP 0.0328 | τ 0.0638 | Total 23.8669
+Epoch 00045 | NCE 25.6553 | KOOP 0.0354 | τ 0.0636 | Total 25.6907
+Epoch 00046 | NCE 24.9549 | KOOP 0.0356 | τ 0.0635 | Total 24.9905
+Epoch 00047 | NCE 23.2707 | KOOP 0.0354 | τ 0.0633 | Total 23.3061
+Epoch 00048 | NCE 22.3838 | KOOP 0.0317 | τ 0.0632 | Total 22.4155
+Epoch 00049 | NCE 23.6485 | KOOP 0.0329 | τ 0.0630 | Total 23.6814
+Epoch 00050 | NCE 23.1712 | KOOP 0.0367 | τ 0.0629 | Total 23.2079
+Epoch 00051 | NCE 22.3718 | KOOP 0.0403 | τ 0.0627 | Total 22.4122
+Epoch 00052 | NCE 24.1522 | KOOP 0.0425 | τ 0.0626 | Total 24.1947
+Epoch 00053 | NCE 22.4110 | KOOP 0.0403 | τ 0.0625 | Total 22.4514
+Epoch 00054 | NCE 22.5299 | KOOP 0.0377 | τ 0.0624 | Total 22.5676
+Epoch 00055 | NCE 23.6877 | KOOP 0.0407 | τ 0.0622 | Total 23.7284
+Epoch 00056 | NCE 20.7847 | KOOP 0.0356 | τ 0.0621 | Total 20.8203
+Epoch 00057 | NCE 21.4664 | KOOP 0.0389 | τ 0.0620 | Total 21.5053
+Epoch 00058 | NCE 22.7968 | KOOP 0.0344 | τ 0.0619 | Total 22.8312
+Epoch 00059 | NCE 22.0506 | KOOP 0.0367 | τ 0.0618 | Total 22.0873
+Epoch 00060 | NCE 22.4368 | KOOP 0.0438 | τ 0.0617 | Total 22.4806
+Epoch 00061 | NCE 21.7225 | KOOP 0.0373 | τ 0.0616 | Total 21.7598
+Epoch 00062 | NCE 22.1148 | KOOP 0.0379 | τ 0.0616 | Total 22.1527
+Epoch 00063 | NCE 20.8497 | KOOP 0.0357 | τ 0.0615 | Total 20.8854
+Epoch 00064 | NCE 18.9669 | KOOP 0.0340 | τ 0.0614 | Total 19.0009
+Epoch 00065 | NCE 22.3370 | KOOP 0.0384 | τ 0.0613 | Total 22.3754
+Epoch 00066 | NCE 19.7529 | KOOP 0.0371 | τ 0.0613 | Total 19.7900
+Epoch 00067 | NCE 19.1827 | KOOP 0.0346 | τ 0.0612 | Total 19.2173
+Epoch 00068 | NCE 19.0650 | KOOP 0.0347 | τ 0.0611 | Total 19.0997
+Epoch 00069 | NCE 20.7940 | KOOP 0.0412 | τ 0.0611 | Total 20.8352
+Epoch 00070 | NCE 20.1869 | KOOP 0.0322 | τ 0.0610 | Total 20.2190
+Epoch 00071 | NCE 17.0760 | KOOP 0.0275 | τ 0.0610 | Total 17.1035
+Epoch 00072 | NCE 18.7177 | KOOP 0.0355 | τ 0.0609 | Total 18.7532
+Epoch 00073 | NCE 19.1379 | KOOP 0.0350 | τ 0.0609 | Total 19.1729
+Epoch 00074 | NCE 17.9821 | KOOP 0.0301 | τ 0.0608 | Total 18.0122
+Epoch 00075 | NCE 19.6911 | KOOP 0.0375 | τ 0.0608 | Total 19.7286
+Epoch 00076 | NCE 21.1024 | KOOP 0.0441 | τ 0.0607 | Total 21.1465
+Epoch 00077 | NCE 17.2198 | KOOP 0.0341 | τ 0.0607 | Total 17.2540
+Epoch 00078 | NCE 18.5955 | KOOP 0.0335 | τ 0.0607 | Total 18.6290
+Epoch 00079 | NCE 20.2788 | KOOP 0.0383 | τ 0.0607 | Total 20.3171
+Epoch 00080 | NCE 22.8252 | KOOP 0.0462 | τ 0.0606 | Total 22.8713
+Epoch 00081 | NCE 18.7188 | KOOP 0.0345 | τ 0.0606 | Total 18.7534
+Epoch 00082 | NCE 17.8225 | KOOP 0.0367 | τ 0.0606 | Total 17.8592
+Epoch 00083 | NCE 19.0916 | KOOP 0.0376 | τ 0.0606 | Total 19.1292
+Epoch 00084 | NCE 17.0536 | KOOP 0.0298 | τ 0.0605 | Total 17.0834
+Epoch 00085 | NCE 17.5662 | KOOP 0.0348 | τ 0.0605 | Total 17.6011
+Epoch 00086 | NCE 17.9704 | KOOP 0.0352 | τ 0.0605 | Total 18.0057
+Epoch 00087 | NCE 17.3356 | KOOP 0.0357 | τ 0.0605 | Total 17.3713
+Epoch 00088 | NCE 18.2281 | KOOP 0.0331 | τ 0.0605 | Total 18.2612
+Epoch 00089 | NCE 18.5010 | KOOP 0.0365 | τ 0.0605 | Total 18.5375
+Epoch 00090 | NCE 17.2645 | KOOP 0.0309 | τ 0.0605 | Total 17.2954
+Epoch 00091 | NCE 18.0423 | KOOP 0.0333 | τ 0.0605 | Total 18.0756
+Epoch 00092 | NCE 18.7761 | KOOP 0.0362 | τ 0.0605 | Total 18.8124
+Epoch 00093 | NCE 18.4380 | KOOP 0.0317 | τ 0.0605 | Total 18.4698
+Epoch 00094 | NCE 17.3152 | KOOP 0.0349 | τ 0.0605 | Total 17.3501
+Epoch 00095 | NCE 18.7188 | KOOP 0.0325 | τ 0.0605 | Total 18.7514
+Epoch 00096 | NCE 18.2357 | KOOP 0.0312 | τ 0.0605 | Total 18.2669
+Epoch 00097 | NCE 18.1330 | KOOP 0.0303 | τ 0.0605 | Total 18.1633
+Epoch 00098 | NCE 18.7289 | KOOP 0.0349 | τ 0.0605 | Total 18.7638
+Epoch 00099 | NCE 17.7118 | KOOP 0.0350 | τ 0.0605 | Total 17.7468
+
+AUC (S1+S2+S3 combined): 0.9236
+  S1 temporal: 0.8973 | S2 Koopman: 0.9109 | S3 nbr-dev: 0.6360
+[ablate-result] ablation=none seed=42 dataset=bitalpha task=anomaly_detection result={'auc': 0.923629096722622, 'auc_s1': 0.8973381294964028, 'auc_s2': 0.9109101290396254, 'auc_s3': 0.6360397396368619}

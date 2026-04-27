@@ -1,0 +1,7 @@
+run bitcoinotc_anomaly_lk00_s24
+run dblp_anomaly_lk00_s24
+run bitcoinotc_anomaly_lk05_s24
+run dblp_anomaly_lk05_s24
+run bitcoinotc_anomaly_lk20_s24
+run dblp_anomaly_lk20_s24
+Queue lambda_koop_sweep on GPU 2 complete.

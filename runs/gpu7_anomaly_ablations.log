@@ -1,0 +1,12 @@
+reddit_ano done; launching anomaly_ablations on GPU 7
+[run ] GPU=7 dblp_no_koop_anomaly_s24
+[done] dblp_no_koop_anomaly_s24
+[run ] GPU=7 bitcoinotc_no_koop_anomaly_s24
+[done] bitcoinotc_no_koop_anomaly_s24
+[run ] GPU=7 bitotc_no_koop_anomaly_s24
+[done] bitotc_no_koop_anomaly_s24
+[run ] GPU=7 bitalpha_no_koop_anomaly_s24
+[done] bitalpha_no_koop_anomaly_s24
+[run ] GPU=7 tax51_no_koop_anomaly_s24
+[done] tax51_no_koop_anomaly_s24
+Queue anomaly_ablations on GPU 7 complete.

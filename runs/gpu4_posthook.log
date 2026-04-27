@@ -1,0 +1,9 @@
+[run ] GPU=4 dblp_canonical_s42
+[done] dblp_canonical_s42
+[run ] GPU=4 dblp_canonical_s7
+[done] dblp_canonical_s7
+[run ] GPU=4 dblp_canonical_s13
+[done] dblp_canonical_s13
+[run ] GPU=4 dblp_canonical_s99
+[done] dblp_canonical_s99
+Queue dblp_multiseed on GPU 4 complete.

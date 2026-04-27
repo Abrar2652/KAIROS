@@ -1,0 +1,6 @@
+τ sweep on bitcoin+bitotc done; extending to bitalpha
+run bitalpha_fixedtau02_s24
+run bitalpha_fixedtau03_s24
+run bitalpha_fixedtau07_s24
+run bitalpha_fixedtau10_s24
+bitalpha τ sweep complete

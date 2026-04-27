@@ -1,0 +1,14 @@
+=== Reddit anomaly with λ_koop=0 multi-seed (4 more seeds) ===
+[run ] GPU=6 reddit_no_koop_anomaly_s42
+/nas/home/jahin/KAIROS/KAIROS/reddit_nokoop_queue.sh: line 19: /nas/home/jahin/KAIROS/runs/reddit_no_koop_anomaly_s42.log: No space left on device
+[done] reddit_no_koop_anomaly_s42
+[run ] GPU=6 reddit_no_koop_anomaly_s7
+/nas/home/jahin/KAIROS/KAIROS/reddit_nokoop_queue.sh: line 19: /nas/home/jahin/KAIROS/runs/reddit_no_koop_anomaly_s7.log: No space left on device
+[done] reddit_no_koop_anomaly_s7
+[run ] GPU=6 reddit_no_koop_anomaly_s13
+/nas/home/jahin/KAIROS/KAIROS/reddit_nokoop_queue.sh: line 19: /nas/home/jahin/KAIROS/runs/reddit_no_koop_anomaly_s13.log: No space left on device
+[done] reddit_no_koop_anomaly_s13
+[run ] GPU=6 reddit_no_koop_anomaly_s99
+/nas/home/jahin/KAIROS/KAIROS/reddit_nokoop_queue.sh: line 19: /nas/home/jahin/KAIROS/runs/reddit_no_koop_anomaly_s99.log: No space left on device
+[done] reddit_no_koop_anomaly_s99
+=== Reddit λ_koop=0 queue complete on GPU 6 ===

@@ -1,0 +1,3 @@
+run bitalpha_ano_fixedtau05_s24
+run tax51_ano_fixedtau05_s24
+GPU 7 anomaly fixed_tau sweep done

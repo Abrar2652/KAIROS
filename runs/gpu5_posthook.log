@@ -1,0 +1,9 @@
+[run ] GPU=5 tax51_canonical_s42
+[done] tax51_canonical_s42
+[run ] GPU=5 tax51_canonical_s7
+[done] tax51_canonical_s7
+[run ] GPU=5 tax51_canonical_s13
+[done] tax51_canonical_s13
+[run ] GPU=5 tax51_canonical_s99
+[done] tax51_canonical_s99
+Queue tax51_multiseed on GPU 5 complete.

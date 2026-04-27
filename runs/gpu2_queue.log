@@ -1,0 +1,13 @@
+s=13 done; launching queue_runner on GPU 2
+[skip] bitcoinotc_canonical_s13 (already has result)
+[run ] GPU=2 bitcoinotc_canonical_s99
+[done] bitcoinotc_canonical_s99
+[run ] GPU=2 bitcoinotc_fixedtau05_s42
+[done] bitcoinotc_fixedtau05_s42
+[run ] GPU=2 bitcoinotc_fixedtau05_s7
+[done] bitcoinotc_fixedtau05_s7
+[run ] GPU=2 bitcoinotc_fixedtau05_s13
+[done] bitcoinotc_fixedtau05_s13
+[run ] GPU=2 bitcoinotc_fixedtau05_s99
+[done] bitcoinotc_fixedtau05_s99
+Queue gpu2_queue on GPU 2 complete.

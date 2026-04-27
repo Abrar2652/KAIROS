@@ -1,0 +1,90 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[ablate] mode=fixed_tau seed=7 dataset=bitotc task=classification
+[KAIROS] Using device: cuda:0 (NVIDIA RTX A5000)
+[KAIROS] Classification task → λ_koop overridden to 0.0
+[KAIROS] Small graph (4863 nodes) → full-neighbour training sampler
+
+[KAIROS] Backbone: sgc
+Training 50 epochs | 4 views | λ_koop=0.0 | PPR α=0.15
+
+/nas/home/jahin/.local/lib/python3.10/site-packages/dgl/dataloading/dataloader.py:1144: DGLWarning: Dataloader CPU affinity opt is not enabled, consider switching it on (see enable_cpu_affinity() or CPU best practices for DGL [https://docs.dgl.ai/tutorials/cpu/cpu_best_practises.html])
+  dgl_warning(
+Epoch 00000 | NCE 73.9894 | KOOP 0.0000 | τ 0.5000 | Total 73.9894
+Epoch 00001 | NCE 69.9548 | KOOP 0.0000 | τ 0.5000 | Total 69.9548
+Epoch 00002 | NCE 68.8642 | KOOP 0.0000 | τ 0.5000 | Total 68.8642
+Epoch 00003 | NCE 66.1461 | KOOP 0.0000 | τ 0.5000 | Total 66.1461
+Epoch 00004 | NCE 65.2103 | KOOP 0.0000 | τ 0.5000 | Total 65.2103
+Epoch 00005 | NCE 65.0954 | KOOP 0.0000 | τ 0.5000 | Total 65.0954
+Epoch 00006 | NCE 63.2421 | KOOP 0.0000 | τ 0.5000 | Total 63.2421
+Epoch 00007 | NCE 63.5409 | KOOP 0.0000 | τ 0.5000 | Total 63.5409
+Epoch 00008 | NCE 63.7131 | KOOP 0.0000 | τ 0.5000 | Total 63.7131
+Epoch 00009 | NCE 61.6159 | KOOP 0.0000 | τ 0.5000 | Total 61.6159
+Epoch 00010 | NCE 62.5565 | KOOP 0.0000 | τ 0.5000 | Total 62.5565
+Epoch 00011 | NCE 61.6945 | KOOP 0.0000 | τ 0.5000 | Total 61.6945
+Epoch 00012 | NCE 61.7227 | KOOP 0.0000 | τ 0.5000 | Total 61.7227
+Epoch 00013 | NCE 62.0504 | KOOP 0.0000 | τ 0.5000 | Total 62.0504
+Epoch 00014 | NCE 61.1054 | KOOP 0.0000 | τ 0.5000 | Total 61.1054
+Epoch 00015 | NCE 61.4933 | KOOP 0.0000 | τ 0.5000 | Total 61.4933
+Epoch 00016 | NCE 59.2370 | KOOP 0.0000 | τ 0.5000 | Total 59.2370
+Epoch 00017 | NCE 61.1114 | KOOP 0.0000 | τ 0.5000 | Total 61.1114
+Epoch 00018 | NCE 60.6712 | KOOP 0.0000 | τ 0.5000 | Total 60.6712
+Epoch 00019 | NCE 60.9543 | KOOP 0.0000 | τ 0.5000 | Total 60.9543
+Epoch 00020 | NCE 60.7429 | KOOP 0.0000 | τ 0.5000 | Total 60.7429
+Epoch 00021 | NCE 59.0388 | KOOP 0.0000 | τ 0.5000 | Total 59.0388
+Epoch 00022 | NCE 61.1466 | KOOP 0.0000 | τ 0.5000 | Total 61.1466
+Epoch 00023 | NCE 60.5315 | KOOP 0.0000 | τ 0.5000 | Total 60.5315
+Epoch 00024 | NCE 60.8506 | KOOP 0.0000 | τ 0.5000 | Total 60.8506
+Epoch 00025 | NCE 59.5446 | KOOP 0.0000 | τ 0.5000 | Total 59.5446
+Epoch 00026 | NCE 60.5565 | KOOP 0.0000 | τ 0.5000 | Total 60.5565
+Epoch 00027 | NCE 59.8359 | KOOP 0.0000 | τ 0.5000 | Total 59.8359
+Epoch 00028 | NCE 58.8176 | KOOP 0.0000 | τ 0.5000 | Total 58.8176
+Epoch 00029 | NCE 59.7757 | KOOP 0.0000 | τ 0.5000 | Total 59.7757
+Epoch 00030 | NCE 60.0719 | KOOP 0.0000 | τ 0.5000 | Total 60.0719
+Epoch 00031 | NCE 60.2489 | KOOP 0.0000 | τ 0.5000 | Total 60.2489
+Epoch 00032 | NCE 58.6194 | KOOP 0.0000 | τ 0.5000 | Total 58.6194
+Epoch 00033 | NCE 60.1110 | KOOP 0.0000 | τ 0.5000 | Total 60.1110
+Epoch 00034 | NCE 60.5634 | KOOP 0.0000 | τ 0.5000 | Total 60.5634
+Epoch 00035 | NCE 59.0448 | KOOP 0.0000 | τ 0.5000 | Total 59.0448
+Epoch 00036 | NCE 58.7705 | KOOP 0.0000 | τ 0.5000 | Total 58.7705
+Epoch 00037 | NCE 59.4447 | KOOP 0.0000 | τ 0.5000 | Total 59.4447
+Epoch 00038 | NCE 58.6385 | KOOP 0.0000 | τ 0.5000 | Total 58.6385
+Epoch 00039 | NCE 60.1808 | KOOP 0.0000 | τ 0.5000 | Total 60.1808
+Epoch 00040 | NCE 60.1675 | KOOP 0.0000 | τ 0.5000 | Total 60.1675
+Epoch 00041 | NCE 60.0476 | KOOP 0.0000 | τ 0.5000 | Total 60.0476
+Epoch 00042 | NCE 58.9339 | KOOP 0.0000 | τ 0.5000 | Total 58.9339
+Epoch 00043 | NCE 59.6068 | KOOP 0.0000 | τ 0.5000 | Total 59.6068
+Epoch 00044 | NCE 59.3884 | KOOP 0.0000 | τ 0.5000 | Total 59.3884
+Epoch 00045 | NCE 59.1665 | KOOP 0.0000 | τ 0.5000 | Total 59.1665
+Epoch 00046 | NCE 59.1201 | KOOP 0.0000 | τ 0.5000 | Total 59.1201
+Epoch 00047 | NCE 58.7018 | KOOP 0.0000 | τ 0.5000 | Total 58.7018
+Epoch 00048 | NCE 58.9457 | KOOP 0.0000 | τ 0.5000 | Total 58.9457
+Epoch 00049 | NCE 59.4790 | KOOP 0.0000 | τ 0.5000 | Total 59.4790
+  LinEval    0 | train 0.2869 | val 0.4371 | micro 0.4474 | wei 0.4339
+  LinEval  500 | train 0.6757 | val 0.6268 | micro 0.6354 | wei 0.5311
+  LinEval 1000 | train 0.6819 | val 0.6247 | micro 0.6320 | wei 0.5306
+  LinEval 1500 | train 0.6840 | val 0.6247 | micro 0.6307 | wei 0.5304
+  LinEval 1999 | train 0.6861 | val 0.6206 | micro 0.6292 | wei 0.5302
+  LinEval    0 | train 0.1185 | val 0.4557 | micro 0.4474 | wei 0.4435
+  LinEval  500 | train 0.6757 | val 0.6309 | micro 0.6349 | wei 0.5291
+  LinEval 1000 | train 0.6819 | val 0.6247 | micro 0.6328 | wei 0.5314
+  LinEval 1500 | train 0.6840 | val 0.6247 | micro 0.6307 | wei 0.5304
+  LinEval 1999 | train 0.6861 | val 0.6227 | micro 0.6297 | wei 0.5308
+  LinEval    0 | train 0.4865 | val 0.5959 | micro 0.6073 | wei 0.4760
+  LinEval  500 | train 0.6757 | val 0.6330 | micro 0.6349 | wei 0.5301
+  LinEval 1000 | train 0.6819 | val 0.6268 | micro 0.6320 | wei 0.5306
+  LinEval 1500 | train 0.6840 | val 0.6227 | micro 0.6307 | wei 0.5308
+  LinEval 1999 | train 0.6861 | val 0.6227 | micro 0.6289 | wei 0.5304
+  LinEval    0 | train 0.0852 | val 0.3670 | micro 0.3564 | wei 0.3895
+  LinEval  500 | train 0.6757 | val 0.6289 | micro 0.6349 | wei 0.5287
+  LinEval 1000 | train 0.6819 | val 0.6247 | micro 0.6318 | wei 0.5301
+  LinEval 1500 | train 0.6840 | val 0.6247 | micro 0.6310 | wei 0.5299
+  LinEval 1999 | train 0.6861 | val 0.6206 | micro 0.6294 | wei 0.5303
+  LinEval    0 | train 0.0187 | val 0.1402 | micro 0.1395 | wei 0.1983
+  LinEval  500 | train 0.6757 | val 0.6289 | micro 0.6346 | wei 0.5298
+  LinEval 1000 | train 0.6819 | val 0.6247 | micro 0.6320 | wei 0.5306
+  LinEval 1500 | train 0.6840 | val 0.6268 | micro 0.6307 | wei 0.5297
+  LinEval 1999 | train 0.6861 | val 0.6247 | micro 0.6294 | wei 0.5303
+
+Linear evaluation  Acc: 0.6326  Wei-F1: 0.5210
+[ablate-result] ablation=fixed_tau seed=7 dataset=bitotc task=classification result={'accuracy': 0.632594108581543, 'weighted_f1': 0.5209604501724243}

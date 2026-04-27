@@ -1,0 +1,123 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+[ablate] mode=fixed_tau seed=99 dataset=mooc task=anomaly_detection
+[KAIROS] Using device: cuda:0 (NVIDIA RTX A5000)
+Constructing structural anomaly nodes...
+Done. 300 structural nodes (4500 edges)
+
+Constructing attribute anomaly nodes...
+Done. 300 attribute anomaly nodes
+
+[KAIROS] Small graph (7144 nodes) → full-neighbour training sampler
+
+[KAIROS] Backbone: gat
+Training 100 epochs | 4 views | λ_koop=1.0 | PPR α=0.15
+
+/nas/home/jahin/.local/lib/python3.10/site-packages/dgl/dataloading/dataloader.py:1144: DGLWarning: Dataloader CPU affinity opt is not enabled, consider switching it on (see enable_cpu_affinity() or CPU best practices for DGL [https://docs.dgl.ai/tutorials/cpu/cpu_best_practises.html])
+  dgl_warning(
+Epoch 00000 | NCE 80.0667 | KOOP 0.1156 | τ 0.5000 | Total 80.1823
+Epoch 00001 | NCE 75.5513 | KOOP 0.0475 | τ 0.5000 | Total 75.5988
+Epoch 00002 | NCE 75.9976 | KOOP 0.0732 | τ 0.5000 | Total 76.0708
+Epoch 00003 | NCE 74.0131 | KOOP 0.0594 | τ 0.5000 | Total 74.0725
+Epoch 00004 | NCE 72.0591 | KOOP 0.0526 | τ 0.5000 | Total 72.1117
+Epoch 00005 | NCE 71.6777 | KOOP 0.0410 | τ 0.5000 | Total 71.7188
+Epoch 00006 | NCE 70.3915 | KOOP 0.0392 | τ 0.5000 | Total 70.4306
+Epoch 00007 | NCE 69.6927 | KOOP 0.0320 | τ 0.5000 | Total 69.7248
+Epoch 00008 | NCE 69.0185 | KOOP 0.0318 | τ 0.5000 | Total 69.0503
+Epoch 00009 | NCE 68.5129 | KOOP 0.0330 | τ 0.5000 | Total 68.5459
+Epoch 00010 | NCE 67.5187 | KOOP 0.0276 | τ 0.5000 | Total 67.5462
+Epoch 00011 | NCE 67.5863 | KOOP 0.0302 | τ 0.5000 | Total 67.6165
+Epoch 00012 | NCE 66.8057 | KOOP 0.0289 | τ 0.5000 | Total 66.8346
+Epoch 00013 | NCE 67.3038 | KOOP 0.0263 | τ 0.5000 | Total 67.3301
+Epoch 00014 | NCE 66.6314 | KOOP 0.0259 | τ 0.5000 | Total 66.6573
+Epoch 00015 | NCE 66.9124 | KOOP 0.0249 | τ 0.5000 | Total 66.9373
+Epoch 00016 | NCE 65.7680 | KOOP 0.0288 | τ 0.5000 | Total 65.7967
+Epoch 00017 | NCE 65.6851 | KOOP 0.0196 | τ 0.5000 | Total 65.7047
+Epoch 00018 | NCE 66.0048 | KOOP 0.0244 | τ 0.5000 | Total 66.0292
+Epoch 00019 | NCE 65.2222 | KOOP 0.0261 | τ 0.5000 | Total 65.2482
+Epoch 00020 | NCE 64.8516 | KOOP 0.0218 | τ 0.5000 | Total 64.8734
+Epoch 00021 | NCE 64.3948 | KOOP 0.0131 | τ 0.5000 | Total 64.4079
+Epoch 00022 | NCE 64.4947 | KOOP 0.0272 | τ 0.5000 | Total 64.5219
+Epoch 00023 | NCE 64.2560 | KOOP 0.0168 | τ 0.5000 | Total 64.2728
+Epoch 00024 | NCE 64.0970 | KOOP 0.0203 | τ 0.5000 | Total 64.1174
+Epoch 00025 | NCE 63.4219 | KOOP 0.0145 | τ 0.5000 | Total 63.4364
+Epoch 00026 | NCE 63.9607 | KOOP 0.0265 | τ 0.5000 | Total 63.9872
+Epoch 00027 | NCE 63.3154 | KOOP 0.0206 | τ 0.5000 | Total 63.3361
+Epoch 00028 | NCE 63.4716 | KOOP 0.0232 | τ 0.5000 | Total 63.4948
+Epoch 00029 | NCE 63.1521 | KOOP 0.0188 | τ 0.5000 | Total 63.1709
+Epoch 00030 | NCE 62.0483 | KOOP 0.0087 | τ 0.5000 | Total 62.0570
+Epoch 00031 | NCE 62.2094 | KOOP 0.0126 | τ 0.5000 | Total 62.2220
+Epoch 00032 | NCE 62.7087 | KOOP 0.0155 | τ 0.5000 | Total 62.7242
+Epoch 00033 | NCE 62.4213 | KOOP 0.0151 | τ 0.5000 | Total 62.4364
+Epoch 00034 | NCE 62.2407 | KOOP 0.0147 | τ 0.5000 | Total 62.2554
+Epoch 00035 | NCE 61.9654 | KOOP 0.0147 | τ 0.5000 | Total 61.9801
+Epoch 00036 | NCE 61.9989 | KOOP 0.0124 | τ 0.5000 | Total 62.0113
+Epoch 00037 | NCE 61.8472 | KOOP 0.0137 | τ 0.5000 | Total 61.8609
+Epoch 00038 | NCE 61.7158 | KOOP 0.0143 | τ 0.5000 | Total 61.7301
+Epoch 00039 | NCE 61.7800 | KOOP 0.0155 | τ 0.5000 | Total 61.7955
+Epoch 00040 | NCE 61.2835 | KOOP 0.0086 | τ 0.5000 | Total 61.2922
+Epoch 00041 | NCE 61.7093 | KOOP 0.0099 | τ 0.5000 | Total 61.7192
+Epoch 00042 | NCE 61.2797 | KOOP 0.0077 | τ 0.5000 | Total 61.2873
+Epoch 00043 | NCE 61.3911 | KOOP 0.0107 | τ 0.5000 | Total 61.4018
+Epoch 00044 | NCE 61.0263 | KOOP 0.0112 | τ 0.5000 | Total 61.0375
+Epoch 00045 | NCE 61.2079 | KOOP 0.0201 | τ 0.5000 | Total 61.2280
+Epoch 00046 | NCE 61.3550 | KOOP 0.0234 | τ 0.5000 | Total 61.3784
+Epoch 00047 | NCE 61.5600 | KOOP 0.0179 | τ 0.5000 | Total 61.5779
+Epoch 00048 | NCE 60.5103 | KOOP 0.0110 | τ 0.5000 | Total 60.5213
+Epoch 00049 | NCE 60.7482 | KOOP 0.0131 | τ 0.5000 | Total 60.7613
+Epoch 00050 | NCE 60.5094 | KOOP 0.0061 | τ 0.5000 | Total 60.5154
+Epoch 00051 | NCE 60.7505 | KOOP 0.0077 | τ 0.5000 | Total 60.7582
+Epoch 00052 | NCE 60.5168 | KOOP 0.0047 | τ 0.5000 | Total 60.5215
+Epoch 00053 | NCE 60.5125 | KOOP 0.0128 | τ 0.5000 | Total 60.5253
+Epoch 00054 | NCE 60.8839 | KOOP 0.0153 | τ 0.5000 | Total 60.8992
+Epoch 00055 | NCE 60.4578 | KOOP 0.0069 | τ 0.5000 | Total 60.4648
+Epoch 00056 | NCE 60.4891 | KOOP 0.0112 | τ 0.5000 | Total 60.5003
+Epoch 00057 | NCE 60.4837 | KOOP 0.0097 | τ 0.5000 | Total 60.4934
+Epoch 00058 | NCE 60.0752 | KOOP 0.0079 | τ 0.5000 | Total 60.0831
+Epoch 00059 | NCE 59.9714 | KOOP 0.0073 | τ 0.5000 | Total 59.9787
+Epoch 00060 | NCE 59.8025 | KOOP 0.0065 | τ 0.5000 | Total 59.8090
+Epoch 00061 | NCE 60.4589 | KOOP 0.0118 | τ 0.5000 | Total 60.4707
+Epoch 00062 | NCE 60.0274 | KOOP 0.0061 | τ 0.5000 | Total 60.0336
+Epoch 00063 | NCE 60.0252 | KOOP 0.0069 | τ 0.5000 | Total 60.0321
+Epoch 00064 | NCE 59.8377 | KOOP 0.0054 | τ 0.5000 | Total 59.8431
+Epoch 00065 | NCE 60.2507 | KOOP 0.0161 | τ 0.5000 | Total 60.2669
+Epoch 00066 | NCE 60.0662 | KOOP 0.0113 | τ 0.5000 | Total 60.0775
+Epoch 00067 | NCE 60.0019 | KOOP 0.0091 | τ 0.5000 | Total 60.0110
+Epoch 00068 | NCE 60.0127 | KOOP 0.0077 | τ 0.5000 | Total 60.0204
+Epoch 00069 | NCE 59.8065 | KOOP 0.0054 | τ 0.5000 | Total 59.8119
+Epoch 00070 | NCE 59.5625 | KOOP 0.0039 | τ 0.5000 | Total 59.5664
+Epoch 00071 | NCE 59.9456 | KOOP 0.0115 | τ 0.5000 | Total 59.9571
+Epoch 00072 | NCE 59.5670 | KOOP 0.0046 | τ 0.5000 | Total 59.5717
+Epoch 00073 | NCE 59.4140 | KOOP 0.0031 | τ 0.5000 | Total 59.4172
+Epoch 00074 | NCE 59.9080 | KOOP 0.0106 | τ 0.5000 | Total 59.9186
+Epoch 00075 | NCE 60.0293 | KOOP 0.0095 | τ 0.5000 | Total 60.0388
+Epoch 00076 | NCE 60.3315 | KOOP 0.0139 | τ 0.5000 | Total 60.3455
+Epoch 00077 | NCE 59.7433 | KOOP 0.0115 | τ 0.5000 | Total 59.7549
+Epoch 00078 | NCE 59.7296 | KOOP 0.0059 | τ 0.5000 | Total 59.7355
+Epoch 00079 | NCE 60.0354 | KOOP 0.0099 | τ 0.5000 | Total 60.0453
+Epoch 00080 | NCE 59.8243 | KOOP 0.0092 | τ 0.5000 | Total 59.8335
+Epoch 00081 | NCE 59.5885 | KOOP 0.0057 | τ 0.5000 | Total 59.5942
+Epoch 00082 | NCE 59.9443 | KOOP 0.0139 | τ 0.5000 | Total 59.9583
+Epoch 00083 | NCE 59.7522 | KOOP 0.0099 | τ 0.5000 | Total 59.7621
+Epoch 00084 | NCE 59.7863 | KOOP 0.0132 | τ 0.5000 | Total 59.7994
+Epoch 00085 | NCE 60.0302 | KOOP 0.0126 | τ 0.5000 | Total 60.0429
+Epoch 00086 | NCE 60.0842 | KOOP 0.0116 | τ 0.5000 | Total 60.0958
+Epoch 00087 | NCE 59.9155 | KOOP 0.0099 | τ 0.5000 | Total 59.9254
+Epoch 00088 | NCE 59.7170 | KOOP 0.0096 | τ 0.5000 | Total 59.7266
+Epoch 00089 | NCE 59.7161 | KOOP 0.0060 | τ 0.5000 | Total 59.7221
+Epoch 00090 | NCE 59.9274 | KOOP 0.0168 | τ 0.5000 | Total 59.9443
+Epoch 00091 | NCE 59.8429 | KOOP 0.0110 | τ 0.5000 | Total 59.8540
+Epoch 00092 | NCE 59.7858 | KOOP 0.0116 | τ 0.5000 | Total 59.7974
+Epoch 00093 | NCE 59.9081 | KOOP 0.0167 | τ 0.5000 | Total 59.9249
+Epoch 00094 | NCE 59.7033 | KOOP 0.0103 | τ 0.5000 | Total 59.7136
+Epoch 00095 | NCE 59.4648 | KOOP 0.0051 | τ 0.5000 | Total 59.4699
+Epoch 00096 | NCE 60.0215 | KOOP 0.0126 | τ 0.5000 | Total 60.0341
+Epoch 00097 | NCE 59.6596 | KOOP 0.0072 | τ 0.5000 | Total 59.6668
+Epoch 00098 | NCE 59.6134 | KOOP 0.0062 | τ 0.5000 | Total 59.6196
+Epoch 00099 | NCE 59.2323 | KOOP 0.0035 | τ 0.5000 | Total 59.2359
+
+AUC (S1+S2+S3 combined): 0.8730
+  S1 temporal: 0.9558 | S2 Koopman: 0.9132 | S3 nbr-dev: 0.4797
+[ablate-result] ablation=fixed_tau seed=99 dataset=mooc task=anomaly_detection result={'auc': 0.8730463019559903, 'auc_s1': 0.9558020069274653, 'auc_s2': 0.9131767013039934, 'auc_s3': 0.47966636104319477}

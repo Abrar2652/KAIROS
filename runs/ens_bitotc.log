@@ -1,0 +1,11 @@
+[run ] GPU=6 bitotc_gcn_tau05_s24_ensembletrain
+[done] bitotc_gcn_tau05_s24_ensembletrain → /nas/home/jahin/KAIROS/runs/embeds/bitotc_gcn_tau05_s24.pt
+[run ] GPU=6 bitotc_gcn_tau05_s42_ensembletrain
+[done] bitotc_gcn_tau05_s42_ensembletrain → /nas/home/jahin/KAIROS/runs/embeds/bitotc_gcn_tau05_s42.pt
+[run ] GPU=6 bitotc_gcn_tau05_s7_ensembletrain
+[done] bitotc_gcn_tau05_s7_ensembletrain → /nas/home/jahin/KAIROS/runs/embeds/bitotc_gcn_tau05_s7.pt
+[run ] GPU=6 bitotc_gcn_tau05_s13_ensembletrain
+[done] bitotc_gcn_tau05_s13_ensembletrain → /nas/home/jahin/KAIROS/runs/embeds/bitotc_gcn_tau05_s13.pt
+[run ] GPU=6 bitotc_gcn_tau05_s99_ensembletrain
+[done] bitotc_gcn_tau05_s99_ensembletrain → /nas/home/jahin/KAIROS/runs/embeds/bitotc_gcn_tau05_s99.pt
+Ensemble training for bitotc/gcn on GPU 6 complete.

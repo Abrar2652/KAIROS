@@ -1,0 +1,17 @@
+[run ] GPU=6 dblp_fixedtau05_s42
+[done] dblp_fixedtau05_s42
+[run ] GPU=6 dblp_fixedtau05_s7
+[done] dblp_fixedtau05_s7
+[run ] GPU=6 dblp_fixedtau05_s13
+[done] dblp_fixedtau05_s13
+[run ] GPU=6 dblp_fixedtau05_s99
+[done] dblp_fixedtau05_s99
+[run ] GPU=6 tax51_fixedtau05_s42
+[done] tax51_fixedtau05_s42
+[run ] GPU=6 tax51_fixedtau05_s7
+[done] tax51_fixedtau05_s7
+[run ] GPU=6 tax51_fixedtau05_s13
+[done] tax51_fixedtau05_s13
+[run ] GPU=6 tax51_fixedtau05_s99
+[done] tax51_fixedtau05_s99
+Queue dblp_tax_fixedtau_multiseed on GPU 6 complete.

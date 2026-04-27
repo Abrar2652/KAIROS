@@ -1,0 +1,11 @@
+[run ] GPU=2 bitcoinotc_gcn_fixedtau05_s24
+[done] bitcoinotc_gcn_fixedtau05_s24
+[run ] GPU=2 bitcoinotc_gcn_fixedtau05_s42
+[done] bitcoinotc_gcn_fixedtau05_s42
+[run ] GPU=2 bitcoinotc_gcn_fixedtau05_s7
+[done] bitcoinotc_gcn_fixedtau05_s7
+[run ] GPU=2 bitcoinotc_gcn_fixedtau05_s13
+[done] bitcoinotc_gcn_fixedtau05_s13
+[run ] GPU=2 bitcoinotc_gcn_fixedtau05_s99
+[done] bitcoinotc_gcn_fixedtau05_s99
+GCN multi-seed for bitcoinotc on GPU 2 complete.

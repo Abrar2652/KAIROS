@@ -1,0 +1,9 @@
+run bitcoinotc_alpha005_s24
+run bitcoinotc_alpha010_s24
+run bitcoinotc_alpha020_s24
+run bitcoinotc_alpha030_s24
+run bitotc_alpha005_s24
+run bitotc_alpha010_s24
+run bitotc_alpha020_s24
+run bitotc_alpha030_s24
+Queue alpha_sweep_bitcoin on GPU 2 complete.

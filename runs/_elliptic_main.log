@@ -1,0 +1,23 @@
+=== KAIROS: elliptic classification (GCN, tau=0.5) ===
+[run ] GPU=6 elliptic_gcn_fixedtau05_s24
+[done] elliptic_gcn_fixedtau05_s24
+[run ] GPU=6 elliptic_gcn_fixedtau05_s42
+[done] elliptic_gcn_fixedtau05_s42
+[run ] GPU=6 elliptic_gcn_fixedtau05_s7
+[done] elliptic_gcn_fixedtau05_s7
+[run ] GPU=6 elliptic_gcn_fixedtau05_s13
+[done] elliptic_gcn_fixedtau05_s13
+[run ] GPU=6 elliptic_gcn_fixedtau05_s99
+[done] elliptic_gcn_fixedtau05_s99
+=== KAIROS: elliptic anomaly detection ===
+[run ] GPU=6 elliptic_ano_fixedtau05_s24
+[done] elliptic_ano_fixedtau05_s24
+[run ] GPU=6 elliptic_ano_fixedtau05_s42
+[done] elliptic_ano_fixedtau05_s42
+[run ] GPU=6 elliptic_ano_fixedtau05_s7
+[done] elliptic_ano_fixedtau05_s7
+[run ] GPU=6 elliptic_ano_fixedtau05_s13
+[done] elliptic_ano_fixedtau05_s13
+[run ] GPU=6 elliptic_ano_fixedtau05_s99
+[done] elliptic_ano_fixedtau05_s99
+=== Elliptic queue complete on GPU 6 ===

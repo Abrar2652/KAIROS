@@ -1,0 +1,19 @@
+=== Reddit GCN classification multi-seed (4 more seeds) ===
+[run ] GPU=6 reddit_gcn_fixedtau05_s42
+[done] reddit_gcn_fixedtau05_s42
+[run ] GPU=6 reddit_gcn_fixedtau05_s7
+[done] reddit_gcn_fixedtau05_s7
+[run ] GPU=6 reddit_gcn_fixedtau05_s13
+[done] reddit_gcn_fixedtau05_s13
+[run ] GPU=6 reddit_gcn_fixedtau05_s99
+[done] reddit_gcn_fixedtau05_s99
+=== Reddit anomaly multi-seed (4 more seeds at tau=0.5) ===
+[run ] GPU=6 reddit_ano_fixedtau05_s42
+[done] reddit_ano_fixedtau05_s42
+[run ] GPU=6 reddit_ano_fixedtau05_s7
+[done] reddit_ano_fixedtau05_s7
+[run ] GPU=6 reddit_ano_fixedtau05_s13
+[done] reddit_ano_fixedtau05_s13
+[run ] GPU=6 reddit_ano_fixedtau05_s99
+[done] reddit_ano_fixedtau05_s99
+=== Reddit multi-seed queue complete on GPU 6 ===
