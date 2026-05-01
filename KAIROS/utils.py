@@ -17,8 +17,6 @@ import pandas as pd
 import torch as th
 from scipy.spatial.distance import euclidean
 
-random.seed(24)
-
 
 # ═══════════════════════════════════════════════════════════════════
 # Graph loading
@@ -43,7 +41,7 @@ def load_to_dgl_graph(dataset: str, task: str = "classification", snapshots: int
         m, n, k = 15, 20, 50
         if dataset in ("bitcoinotc", "bitotc", "bitalpha"):
             n = 10
-        elif dataset in ("dblp", "tax"):
+        elif dataset == "dblp":
             n = 20
         elif dataset in ("tax51", "reddit"):
             n = 200

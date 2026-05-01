@@ -4,53 +4,55 @@ KAIROS — models.py
 Koopman-Aligned Invariant Representations for Open dynamic Systems
 
 Architecture:
-  1. Dual GAT encoder
-     · orig view  : raw positional-encoding features  (X)
-     · struct view: PPR-diffused features              (X_ppr)
-       PPR gives each node neighbourhood-aggregated features — the same
-       structural signal CLDG++ achieves via its 'S' input, but without
-       requiring separate offline eigenvector computation.
+  1. Dual-encoder backbone (disjoint weights per branch)
+     · orig view  : raw positional-encoding features  (X)       → h^L
+     · struct view: PPR-diffused features (APPNP, K=5, α=0.15)  → h^G
+       Disjoint weights are essential: a shared encoder on (X, X_ppr)
+       produces trivially correlated outputs because X_ppr is a smooth
+       neighbourhood average of X, collapsing the cross-view signal.
+       Backbone choices: {gat, gcn, sgc, sage, h2gcn} — selected per
+       dataset on the validation set (see run_experiments.py).
 
-  2. SimCLR v2 projection heads  (3-layer with BatchNorm + GELU)
-     · Contrastive loss operates in projected space g(h).
-     · Downstream eval uses pre-projection h (orig + PPR, concatenated).
+  2. SimCLR v2 projection heads  (3-layer BN+GELU, dims d→2d→d→d)
+     · Contrastive loss operates in ℓ₂-normalised projected space z.
+     · Downstream eval uses pre-projection h (avg of orig + PPR branches).
 
-  3. Learnable InfoNCE temperature
-     · log_tau is a trainable scalar, bounded to [0.01, 1.0].
+  3. InfoNCE temperature
+     · log_tau is a learnable scalar initialised at log(0.07),
+       clamped to τ ∈ [0.01, 1.0].  All reported results fix τ=0.5
+       (non-trainable buffer) via the fixed_tau patch in run_experiments.py
+       / ablate.py.
 
-  4. KoopmanHead — linearized temporal dynamics  (anomaly-only at eval)
+  4. KoopmanHead — linearized temporal dynamics
      · K ∈ R^{d×d}, initialized at I (= CLDG temporal smoothness at t=0).
-     · predict_loss : φ(G_{t+1}) ≈ K φ(G_t) in embedding space.
-     · invariance_reg : KK^T ≈ I keeps dynamics stable.
-     · residual : per-node ||K h_t − h_{t+1}||₂, the anomaly signal.
+     · predict_loss : cosine error (squared, γ=2) between K h^L_t and h^L_{t+1}.
+       Gradients flow into both K and the orig-view encoder h^L only.
+     · invariance_reg : ||KK^T − I||_F² / d² keeps K near-orthogonal.
+     · residual : per-node ||K h_t − h_{t+1}||₂², the S2 anomaly signal.
 
-  5. EMA (momentum) encoder  — maintained in main.py
-     · Shadow copy updated as: θ_ema ← m·θ_ema + (1−m)·θ_online
-     · Used for evaluation to produce more stable representations.
+Training objective (per ordered view pair (u, v), u < v)
+──────────────────────────────────────────────────────────
+    L_LL  = NCE(z^L_u, z^L_v) / 2             orig–orig, across time
+    L_LG  = NCE(z^L_u, z^G_u) / 4
+           + NCE(z^L_v, z^G_v) / 4            orig–PPR,  same snapshot
+    L_GG  = NCE(z^G_u, z^G_v) / 4             PPR–PPR,  across time
+    L_NCE = Σ_{u<v} (L_LL + L_LG + L_GG)
+    L_koop = mean cosine-error² over consecutive h^L pairs
+             (λ_koop=0 for classification; λ_koop∈{0,1} for anomaly)
 
-Training objective (per temporal pair i, j)
-────────────────────────────────────────────
-    L_LL  = InfoNCE(p_z_i, p_z_j)              orig–orig, across time
-    L_LG  = InfoNCE(p_z_i, p_d_i)/4 +
-            InfoNCE(p_z_j, p_d_j)/4            orig–PPR,  same snapshot
-    L_GG  = InfoNCE(p_d_i, p_d_j)/4            PPR–PPR,  across time
-    L_LM  = InfoNCE(p_z_i, p_m_i)/4 +
-            InfoNCE(p_z_j, p_m_j)/4            orig–masked, same snapshot
-    L_koop = predict_loss(h_z_t, h_z_{t+1})   Koopman temporal prediction
-                                                (λ_koop=0 for classification)
+    Total = L_NCE + λ_koop · L_koop + λ_reg · L_reg   (λ_reg = 0.01 fixed)
 
-    Total = L_LL + L_LG + L_GG + L_LM + λ_koop·L_koop + λ_reg·L_reg
-
-Classification eval (multi-snapshot, fused)
-──────────────────────────────────────────────────────
-    Encode across all temporal snapshots → mean-pool per node.
-    Concat [orig_mean ‖ diff_mean] → 2×embed_dim → LogReg (2000 epochs).
+Classification eval
+────────────────────
+    Single full-graph forward pass (CLDG protocol).
+    Dual-view fused embedding: z_i = (h^L_i + h^G_i) / 2  ∈ R^{64}.
+    LogReg (2000 epochs, 5 runs, lr=1e-2), best val epoch per run.
 
 Anomaly scoring (3 signals, z-normalised and summed)
 ──────────────────────────────────────────────────────
-    S1 = temporal inconsistency   (cosine distance across snapshots)
-    S2 = Koopman prediction error (||K h_t − h_{t+1}||₂)
-    S3 = neighbourhood feature deviation (||h − mean(h_neighbours)||₂)
+    S1 = temporal inconsistency   (mean+std cosine distance across all snapshot pairs)
+    S2 = Koopman prediction error (||K h^L_t − h^L_{t+1}||₂², avg consecutive pairs)
+    S3 = neighbourhood deviation  (||h^L − mean_nbr(h^L)||₂², avg over snapshots)
     score = z_norm(S1) + z_norm(S2) + z_norm(S3)
 """
 
@@ -349,7 +351,7 @@ class KairosEncoder(thnn.Module):
         activation=F.relu,
         dropout: float = 0.0,
         n_heads: int = 4,
-        backbone: str = 'gat',  # 'gat' | 'gcn' | 'sgc' | 'sage'
+        backbone: str = 'gat',  # 'gat' | 'gcn' | 'sgc' | 'sage' | 'h2gcn'
     ):
         super().__init__()
         self.n_layers = n_layers
@@ -376,7 +378,6 @@ class KairosEncoder(thnn.Module):
         # ── Projection heads (3-layer BN — contrastive space only) ───────
         self.orig_projector = _build_projector(embed_dim)
         self.diff_projector = _build_projector(embed_dim)
-        # Masked-feature view reuses orig_projector (same feature space).
 
         # ── Learnable contrastive temperature ─────────────────────────────
         self.log_tau = thnn.Parameter(th.tensor(math.log(0.07)))

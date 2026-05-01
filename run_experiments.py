@@ -254,9 +254,17 @@ GPU_ID = 0
 EPOCHS = None  # set None for full paper runs
 
 # KAIROS hyperparameters
-LAMBDA_KOOP     = 1.0   # Koopman temporal-linearization loss weight
+LAMBDA_KOOP     = 1.0   # Koopman temporal-linearization loss weight (default)
 LAMBDA_KOOP_REG = 0.01  # Koopman orthogonality regularizer weight
 ALPHA = 0.15            # PPR teleport probability (structural view)
+
+# Per-dataset λ_koop override for anomaly detection.
+# Reddit violates the linear Koopman assumption (irregular community dynamics),
+# so λ_koop=0 is optimal there (Table A5 / paper Section 5.4).
+# All other datasets use the default λ_koop=1.0.
+ANO_LAMBDA_KOOP = {
+    "reddit": 0.0,
+}
 
 ORIGINAL_EPOCHS = {
     "dblp": (200, 200),
@@ -428,13 +436,15 @@ def _update_ano_csv(ds_key, auc):
 # ── 6. Run ────────────────────────────────────────────────────────────────────
 
 
-def run_one(ds_key, ds_label, task, backbone, fanout, snaps, views, strat, dl, epochs):
+def run_one(ds_key, ds_label, task, backbone, fanout, snaps, views, strat, dl, epochs,
+            lambda_koop=None):
     print(f"\n{SEP}")
     print(f"{ds_label} | {task} | backbone={backbone}")
     print(SEP)
     # Re-seed before every run for per-experiment reproducibility.
     import numpy as _np, torch as _th
     random.seed(24); _np.random.seed(24); _th.manual_seed(24); _th.cuda.manual_seed_all(24)
+    lkoop = LAMBDA_KOOP if lambda_koop is None else lambda_koop
     return train(
         dataset=ds_key,
         task=task,
@@ -450,7 +460,7 @@ def run_one(ds_key, ds_label, task, backbone, fanout, snaps, views, strat, dl, e
         batch_size=256,
         dataloader_size=dl,
         alpha=ALPHA,
-        lambda_koop=LAMBDA_KOOP,
+        lambda_koop=lkoop,
         lambda_koop_reg=LAMBDA_KOOP_REG,
         num_workers=0,
         epochs=epochs,
@@ -492,6 +502,7 @@ if __name__ == "__main__":
         print(f"\n{'='*70}")
         print(f"Exp {done}/{total} — {label} | Anomaly Detection  (epochs={ano_ep})")
         print("=" * 70)
+        ano_lkoop = ANO_LAMBDA_KOOP.get(k, LAMBDA_KOOP)
         r = run_one(
             k,
             label,
@@ -503,6 +514,7 @@ if __name__ == "__main__":
             exp["ano_strat"],
             exp["ano_dl"],
             ano_ep,
+            lambda_koop=ano_lkoop,
         )
         if r:
             _update_ano_csv(k, r["auc"])

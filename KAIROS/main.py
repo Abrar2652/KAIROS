@@ -5,7 +5,7 @@ Koopman-Aligned Invariant Representations for Open dynamic Systems
 
 Training objective (per temporal pair i, j)
 ────────────────────────────────────────────
-    L_LL  = InfoNCE(p_z_i, p_z_j)              orig–orig, across time
+    L_LL  = InfoNCE(p_z_i, p_z_j)/2            orig–orig, across time
     L_LG  = InfoNCE(p_z_i, p_d_i)/4 +
             InfoNCE(p_z_j, p_d_j)/4            orig–PPR, same snapshot
     L_GG  = InfoNCE(p_d_i, p_d_j)/4            PPR–PPR, across time
@@ -110,6 +110,8 @@ def _z_norm(x: th.Tensor) -> th.Tensor:
 
 
 def _build_subgraph(working_graph, start, span, snapshots, max_time, min_time):
+    # `start` is a 0-based offset returned by sampling_layer. All shipped
+    # datasets have min_time ≈ 0, so these offsets and edge times share units.
     end = min(start + span / snapshots, max_time)
     start_c = max(start, min_time)
     mask = (working_graph.edata["time"] >= start_c) & (
