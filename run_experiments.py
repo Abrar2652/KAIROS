@@ -6,6 +6,12 @@ On Colab:             !python /content/drive/.../run_experiments.py
 
 Set EPOCHS = 1 for a quick sanity check.
 Set EPOCHS = None to use the per-dataset paper epoch counts.
+
+Reproduces the final KAIROS configuration of paper Tables 3 (classification)
+and 4 (anomaly detection): per-dataset backbone (Table A.tab:config) with
+fixed τ = 0.5. To reproduce the canonical (GAT, learnable τ ≈ 0.07) baseline
+row of the component ablation, use KAIROS/gcn_multiseed.sh or
+`KAIROS/ablate.py --ablation none --backbone gat`.
 """
 
 import csv
@@ -211,7 +217,34 @@ print("=" * 70 + "\n")
 print("\n" + "=" * 70)
 print("Step 2 — Importing KAIROS model")
 print("=" * 70)
+import math
+
+import main as kmain
+import models as kmodels
 from main import train
+
+# ── Final-KAIROS configuration patch ──────────────────────────────────────────
+# Paper Table 3/4 numbers come from the final KAIROS configuration:
+#   • per-dataset backbone (Table tab:config)
+#   • fixed τ = 0.5 (paper Section 5; ablate.py --ablation fixed_tau --tau_val 0.5)
+# This wrapper previously called only the canonical (GAT, learnable τ) baseline,
+# which reproduces the first row of tab:component_ablation but not Table 3/4.
+# Apply the same fixed-τ monkey-patch ablate.py uses, so that running this script
+# end-to-end reproduces the headline tables. (See ablate.py:_patch_fixed_tau.)
+
+_FIXED_TAU = 0.5
+
+_orig_encoder_init = kmodels.KairosEncoder.__init__
+
+
+def _init_fixed_tau(self, *a, **kw):
+    _orig_encoder_init(self, *a, **kw)
+    del self.log_tau
+    self.register_buffer("log_tau", torch.tensor(math.log(_FIXED_TAU)))
+
+
+kmodels.KairosEncoder.__init__ = _init_fixed_tau
+print(f"[run_experiments] τ patched to fixed {_FIXED_TAU} (non-trainable)")
 
 print("KAIROS imported successfully.")
 
@@ -238,10 +271,12 @@ SEP = "-" * 70
 
 # ── 4. Experiment definitions ─────────────────────────────────────────────────
 
+# Per-dataset backbone matches paper Table tab:config (Appendix A).
 EXPERIMENTS = [
     dict(
         ds_key="dblp",
         ds_label="DBLP",
+        backbone="sage",
         clf_fanout=[20, 20],
         clf_snaps=4,
         clf_views=4,
@@ -256,6 +291,7 @@ EXPERIMENTS = [
     dict(
         ds_key="bitcoinotc",
         ds_label="Bitcoinotc",
+        backbone="gcn",
         # Fanouts are a safety fallback; for graphs ≤ FULL_NBR_THRESH nodes
         # the adaptive sampler in main.py uses full-neighbour sampling instead.
         clf_fanout=[20, 20],
@@ -272,6 +308,7 @@ EXPERIMENTS = [
     dict(
         ds_key="bitotc",
         ds_label="BITotc",
+        backbone="sgc",
         clf_fanout=[20, 20],
         clf_snaps=4,
         clf_views=4,
@@ -286,6 +323,7 @@ EXPERIMENTS = [
     dict(
         ds_key="bitalpha",
         ds_label="BITalpha",
+        backbone="gcn",
         clf_fanout=[20, 20],
         clf_snaps=6,
         clf_views=4,
@@ -300,6 +338,7 @@ EXPERIMENTS = [
     dict(
         ds_key="tax51",
         ds_label="TAX51",
+        backbone="gat",
         clf_fanout=[20, 20],
         clf_snaps=8,
         clf_views=5,
@@ -314,6 +353,7 @@ EXPERIMENTS = [
     dict(
         ds_key="reddit",
         ds_label="Reddit",
+        backbone="gcn",
         clf_fanout=[20, 20],
         clf_snaps=5,
         clf_views=4,
@@ -388,9 +428,9 @@ def _update_ano_csv(ds_key, auc):
 # ── 6. Run ────────────────────────────────────────────────────────────────────
 
 
-def run_one(ds_key, ds_label, task, fanout, snaps, views, strat, dl, epochs):
+def run_one(ds_key, ds_label, task, backbone, fanout, snaps, views, strat, dl, epochs):
     print(f"\n{SEP}")
-    print(f"{ds_label} | {task}")
+    print(f"{ds_label} | {task} | backbone={backbone}")
     print(SEP)
     # Re-seed before every run for per-experiment reproducibility.
     import numpy as _np, torch as _th
@@ -401,6 +441,7 @@ def run_one(ds_key, ds_label, task, fanout, snaps, views, strat, dl, epochs):
         hidden_dim=128,
         n_classes=64,
         n_layers=2,
+        backbone=backbone,
         fanouts=fanout,
         snapshots=snaps,
         views=views,
@@ -436,6 +477,7 @@ if __name__ == "__main__":
             k,
             label,
             "classification",
+            exp["backbone"],
             exp["clf_fanout"],
             exp["clf_snaps"],
             exp["clf_views"],
@@ -454,6 +496,7 @@ if __name__ == "__main__":
             k,
             label,
             "anomaly_detection",
+            exp["backbone"],
             exp["ano_fanout"],
             exp["ano_snaps"],
             exp["ano_views"],
